@@ -776,7 +776,6 @@ fa-question-circle-o:before { content: "\f29c"; }
 .book.color-theme-2 .book-body .page-wrapper,
 .book.color-theme-2 .book-body .page-inner {
     color: #ddd !important; /* abu terang biar kontras */
-    background-color: #1e1e1e !important; /* lebih gelap */
 }
 
 /* Heading */
@@ -793,11 +792,6 @@ fa-question-circle-o:before { content: "\f29c"; }
 .book.color-theme-2 p,
 .book.color-theme-2 li {
     color: #ddd !important;
-}
-
-/* Link */
-.book.color-theme-2 a {
-    color: #4da3ff !important; /* biru terang */
 }
 
 /* Highlight search result */
