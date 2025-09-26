@@ -799,3 +799,9 @@ fa-question-circle-o:before { content: "\f29c"; }
     background: #ff0 !important;
     color: #000 !important; /* biar tetap kontras di dark mode */
 }
+
+img {
+    -webkit-user-drag: none;
+    user-select: none; /* biar ga bisa diseleksi */
+    pointer-events: auto; /* tetap bisa diklik */
+}

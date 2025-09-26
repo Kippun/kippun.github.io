@@ -1,5 +1,5 @@
 # Configurations
-title:            Integrasi OcNOS
+title:            Home
 longtitle:        Cara Melakukan Integrasi OcNOS dengan Ubuntu pada VirtualBox
 author:           A. Kiflan Jiyaad Mafazi & Muhammad Rizki Akbar
 email:            sighingnow@gmail.com
@@ -22,7 +22,7 @@ toc:
   h_max:   3
 
 # customize the link favicon in header, will be {{site.baseurl}}/{{site.favicon_path}}
-favicon_path:     assets/gitbook/images/cattos.ico
+favicon_path:     assets/gitbook/images/ulangi.ico
 
 # markdown render engine.
 markdown:         kramdown

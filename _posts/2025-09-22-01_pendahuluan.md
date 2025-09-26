@@ -1,7 +1,7 @@
 ---
 title: Pendahuluan
-author: Tao He
-date: 2019-04-28
+author: Muhammad Rizki Akbar
+date: 2025-09-22
 category: Jekyll
 layout: post
 ---
