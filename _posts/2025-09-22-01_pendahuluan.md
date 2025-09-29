@@ -8,9 +8,12 @@ layout: post
 
 ## Oracle Virtual Box
 
+<img src="assets/gitbook/images/OracleVM.webp" alt="Logo Oracle VirtualBox" width="25%">
+<br>
+
 VirtualBox adalah perangkat lunak hypervisor tipe-2 yang memungkinkan kamu menjalankan satu atau lebih sistem operasi (guest) di atas sistem operasi utama (host). VirtualBox bersifat cross-platform (tersedia untuk Linux, Windows, macOS) dan banyak dipakai untuk membuat lab virtual, pengujian, dan pembelajaran.
 
-## Bagaimana VirtualBox bekerja (konsep dasar)
+### Bagaimana VirtualBox bekerja (konsep dasar)
 
 - VirtualBox berjalan di atas OS host (bukan langsung di hardware), sehingga disebut Type-2 hypervisor.
 
@@ -18,7 +21,7 @@ VirtualBox adalah perangkat lunak hypervisor tipe-2 yang memungkinkan kamu menja
 
 - Setiap VM berperilaku seperti komputer terpisah sehingga kamu bisa instal Ubuntu, OcNOS, atau OS lain di VM tersebut.
 
-## Fitur utama yang relevan untuk lab jaringan
+### Fitur utama yang relevan untuk lab jaringan
 
 - Snapshot — simpan status VM dan kembali kapan saja.
 
@@ -36,7 +39,8 @@ VirtualBox adalah perangkat lunak hypervisor tipe-2 yang memungkinkan kamu menja
 
 ## Open Compute Network Operating System (OcNOS)
 
-<img src="assets/gitbook/images/OcNOS.webp" alt="Gambar Ubuntu" width="50%">
+<img src="assets/gitbook/images/OcNOS.webp" alt="Logo OcNOS" width="50%">
+<br>
 
 OcNOS Virtual Machine dari IP Infusion berguna untuk mengenal OcNOS. OCNOS VM berjalan pada lingkungan x86 standar dan dapat digunakan untuk memvalidasi konfigurasi serta menguji fitur L2, L3, dan MPLS tanpa biaya. Tanpa perlu perangkat fisik, OCNOS VM dapat dijalankan pada *hypervisor* populer seperti **KVM, VirtualBox,** dan **VMware**.
 
@@ -88,7 +92,8 @@ Semua fungsionalitas dasar Layer 2, Layer 3, dan multicast tersedia. Dukungan MP
 
 ## Ubuntu
 
-<img src="assets/gitbook/images/Ubuntu.webp" alt="Gambar Ubuntu" width="25%">
+<img src="assets/gitbook/images/Ubuntu.webp" alt="Logo Ubuntu" width="25%">
+<br>
 
 Ubuntu adalah salah satu distribusi Linux yang paling populer dan dikembangkan oleh Canonical. Sistem operasi ini bersifat **open-source**, stabil, dan memiliki dukungan komunitas yang luas. Ubuntu tersedia dalam dua varian utama:
 
