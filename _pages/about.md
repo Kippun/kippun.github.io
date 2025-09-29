@@ -1,6 +1,6 @@
 ---
 title: About Us
-author: Andi Kiflan
+author: A. Kiflan Jiyaad Mafazi. A
 date: 2018-05-02
 category: Jekyll
 layout: post
