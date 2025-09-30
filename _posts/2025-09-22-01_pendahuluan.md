@@ -16,24 +16,17 @@ VirtualBox adalah perangkat lunak hypervisor tipe-2 yang memungkinkan kamu menja
 ### Bagaimana VirtualBox bekerja (konsep dasar)
 
 - VirtualBox berjalan di atas OS host (bukan langsung di hardware), sehingga disebut Type-2 hypervisor.
-
 - Ia membuat mesin virtual (VM) yang punya CPU virtual, RAM, disk virtual, dan perangkat jaringan virtual.
-
 - Setiap VM berperilaku seperti komputer terpisah sehingga kamu bisa instal Ubuntu, OcNOS, atau OS lain di VM tersebut.
 
 ### Fitur utama yang relevan untuk lab jaringan
 
-- Snapshot — simpan status VM dan kembali kapan saja.
-
-- Networking modes — NAT, Bridged, Host-only, Internal: fleksibel untuk skenario lab.
-
-- Shared Folders & Guest Additions — mempermudah transfer file, clipboard bersama, sinkron waktu.
-
-- USB passthrough — akses perangkat USB dari VM.
-
-- Headless / Detach GUI — jalankan VM tanpa antarmuka grafis (berguna untuk server).
-
-- Cross-platform & Gratis (Personal / Edu) — mudah dipakai oleh banyak orang.
+- Snapshot - simpan status VM dan kembali kapan saja.
+- Networking modes - NAT, Bridged, Host-only, Internal: fleksibel untuk skenario lab.
+- Shared Folders & Guest Additions - mempermudah transfer file, clipboard bersama, sinkron waktu.
+- USB passthrough - akses perangkat USB dari VM.
+- Headless / Detach GUI - jalankan VM tanpa antarmuka grafis (berguna untuk server).
+- Cross-platform & Gratis (Personal / Edu) - mudah dipakai oleh banyak orang.
 
 ---
 

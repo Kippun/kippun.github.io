@@ -21,7 +21,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             'icon': 'fa fa-github',
             'onClick': function(e) {
                 e.preventDefault();
-                window.open('https://github.com');
+                window.open('https://github.com/Kippun/kippun.github.io');
             }
         },
         'telegram': {
@@ -29,12 +29,12 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             'icon': 'fa fa-telegram',
             'onClick': function(e) {
                 e.preventDefault();
-                window.open('https://t.me');
+                window.open('https://detik.com');
             }
         },
         'google': {
-            'label': 'Google+',
-            'icon': 'fa fa-google-plus',
+            'label': 'Google',
+            'icon': 'fa fa-google',
             'onClick': function(e) {
                 e.preventDefault();
                 window.open('https://plus.google.com/share?url='+encodeURIComponent(location.href));
