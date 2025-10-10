@@ -1,27 +1,22 @@
 ---
-title: About others
-author: Andi Kiflan
-date: 2025-09-30
+title: About Us
+author: A. Kiflan Jiyaad Mafazi. A
+date: 2025-08-29
 category: Jekyll
 layout: post
 ---
 
-Website dokumentasi ini dibangun menggunakan  [Jekyll](https://jekyllrb.com/), sebuah static site generator yang mengubah file teks sederhana seperti Markdown menjadi website statis yang cepat, ringan, dan mudah diatur. Dengan Jekyll, proses pengelolaan konten menjadi lebih efisien karena cukup menulis dalam format markdown lalu secara otomatis dikompilasi menjadi halaman HTML.
+Kami adalah tim pengembang yang berfokus pada dokumentasi dan riset di bidang teknologi jaringan dan sistem telekomunikasi.  
 
-Beberapa komponen utama dalam pembuatan website ini antara lain:
+👨‍💻 **Muhammad Rizki Akbar - 607052300057** 
 
-- **Jekyll** → static site generator yang digunakan untuk membangun halaman dari file markdown.
+👨‍💻 **A. Kiflan Jiyaad Mafazi - 607052330066**
 
-- **GitBook Jekyll Theme** → tema yang mengatur tampilan, navigasi, serta struktur dokumen.
+Keduanya merupakan mahasiswa **Program Studi D3 Teknologi Telekomunikasi, Telkom University (Angkatan 2023)** yang memiliki ketertarikan terhadap pengembangan jaringan, sistem operasi jaringan terbuka, serta implementasi teknologi berbasis virtualisasi dan IoT.  
 
-- **Markdown (.md)** → format eks utama yang dipakai untuk menulis konten dokumentasi.
+Website dokumentasi ini dibuat sebagai wadah untuk:  
+- Mengarsipkan hasil riset, eksperimen, dan konfigurasi proyek yang telah dilakukan selama studi.  
+- Memberikan referensi teknis yang jelas, terstruktur, dan mudah dipahami bagi mahasiswa maupun praktisi.  
+- Menjadi sarana berbagi pengetahuan dan memperluas pemahaman tentang jaringan modern serta integrasi perangkat lunak terbuka.  
 
-- **HTML, CSS, dan JavaScript** → mendukung pengaturan tampilan serta fitur interaktif pada website.
-
-- **GitHub Pages** → layanan hosting gratis dari GitHub yang digunakan untuk mempublikasikan website ini.
-
-#### Lisensi
-
-Template ini menggunakan lisensi MIT License, yang berarti bebas digunakan, dimodifikasi, dan dibagikan, selama tetap mencantumkan kredit kepada pembuat aslinya.
-
-Referensi lengkap mengenai tema ini dapat dilihat di halaman resmi: [GitBook Jekyll Theme](http://jekyllthemes.org/themes/gitbook/).
+Kami berkomitmen untuk terus memperbarui dokumentasi ini agar tetap relevan dan bermanfaat bagi pembaca yang ingin memahami atau mengimplementasikan teknologi serupa.  

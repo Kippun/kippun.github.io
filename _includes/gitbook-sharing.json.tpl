@@ -24,5 +24,5 @@
 
                 "weibo": false,
 
-                "all": ["facebook", "google", "github", "telegram"]
+                "all": false
             },

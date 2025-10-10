@@ -2,9 +2,8 @@
 title:            Home
 longtitle:        Cara Melakukan Integrasi OcNOS dengan Ubuntu pada VirtualBox
 author:           A. Kiflan Jiyaad Mafazi & Muhammad Rizki Akbar
-email:            sighingnow@gmail.com
 description: >
-  Build Jekyll site with the GitBook style.
+  Build Jekyll documentation site with the GitBook style.
 
 version:          1.0
 gitbook_version:  3.2.3
@@ -50,6 +49,10 @@ exclude:
 
 collections:
   pages:
+    output: true
+    sort_by: order
+    permalink: /:collection/:path/
+  posts:
     output: true
     sort_by: order
     permalink: /:collection/:path/

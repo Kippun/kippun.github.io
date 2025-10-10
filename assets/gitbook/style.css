@@ -794,11 +794,6 @@ fa-question-circle-o:before { content: "\f29c"; }
     color: #ddd !important;
 }
 
-/* Highlight search result */
-.book.color-theme-2 mark {
-    background: #ff0 !important;
-    color: #000 !important; /* biar tetap kontras di dark mode */
-}
 
 img {
     -webkit-user-drag: none;

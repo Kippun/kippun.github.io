@@ -1,6 +1,6 @@
 ---
-title: Pendahuluan
-author: Muhammad Rizki Akbar
+title: Software
+author: Muhammad Rizki Akbar & A. Kiflan Jiyaad Mafazi. A
 date: 2025-09-22
 category: Jekyll
 layout: post
