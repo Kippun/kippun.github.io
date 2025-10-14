@@ -7,7 +7,13 @@
 {%- elsif page.collection == "posts" or page.path contains "_posts" -%}
     <title>{{ page.title | escape }} · Posts</title>
 
-{%- elsif page.collection == "pages" or page.path contains "_pages" -%}
+{%- elsif page.collection == "software" or page.path contains "_software" -%}
+    <title>{{ page.title | escape }} · Software</title>
+
+{%- elsif page.collection == "hardware" or page.path contains "_hardware" -%}
+    <title>{{ page.title | escape }} · Hardware</title>
+
+{%- elsif page.collection == "other" or page.path contains "_other" -%}
     <title>{{ page.title | escape }} · Other</title>
 
 {%- else -%}

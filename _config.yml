@@ -12,7 +12,6 @@ url: 'https://Kippun.github.io'
 baseurl: ''
 rss:              RSS
 
-# bootstrap: use the remote theme for the site itself
 remote_theme: sighingnow/jekyll-gitbook
 
 toc:
@@ -20,10 +19,8 @@ toc:
   h_min:   1
   h_max:   3
 
-# customize the link favicon in header, will be {{site.baseurl}}/{{site.favicon_path}}
-favicon_path:     assets/gitbook/images/ulangi.ico
+favicon_path:     assets/gitbook/images/cattos.ico
 
-# markdown render engine.
 markdown:         kramdown
 kramdown:
   auto_ids:               true
@@ -48,23 +45,23 @@ exclude:
   - _drafts
 
 collections:
-  pages:
+  software:
     output: true
     sort_by: order
     permalink: /:collection/:path/
-  posts:
+  hardware:
     output: true
     sort_by: order
     permalink: /:collection/:path/
-  others:
+  other:
     output: true
     sort_by: order
     permalink: /:collection/:path/
 
 ordered_collections:
-  - posts
-  - pages
-  - others
+  - software
+  - hardware
+  - other
 
 page_width: 800px
 

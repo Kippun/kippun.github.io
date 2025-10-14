@@ -1,14 +1,14 @@
 ---
 title: Software
 author: Muhammad Rizki Akbar & A. Kiflan Jiyaad Mafazi. A
-date: 2025-09-22
+date: 2025-09-21
 category: Jekyll
 layout: post
 ---
 
 ## Oracle Virtual Box
 
-<img src="assets/gitbook/images/OracleVM.webp" alt="Logo Oracle VirtualBox" width="25%">
+<img src="{{ '/assets/gitbook/images/OracleVM.webp' | relative_url }}" alt="Logo OcNOS" width="25%">
 <br>
 
 VirtualBox adalah perangkat lunak hypervisor tipe-2 yang memungkinkan kamu menjalankan satu atau lebih sistem operasi (guest) di atas sistem operasi utama (host). VirtualBox bersifat cross-platform (tersedia untuk Linux, Windows, macOS) dan banyak dipakai untuk membuat lab virtual, pengujian, dan pembelajaran.
@@ -32,7 +32,7 @@ VirtualBox adalah perangkat lunak hypervisor tipe-2 yang memungkinkan kamu menja
 
 ## Open Compute Network Operating System (OcNOS)
 
-<img src="assets/gitbook/images/OcNOS.webp" alt="Logo OcNOS" width="50%">
+<img src="{{ '/assets/gitbook/images/OcNOS.webp' | relative_url }}" alt="Logo OcNOS" width="50%">
 <br>
 
 OcNOS Virtual Machine dari IP Infusion berguna untuk mengenal OcNOS. OCNOS VM berjalan pada lingkungan x86 standar dan dapat digunakan untuk memvalidasi konfigurasi serta menguji fitur L2, L3, dan MPLS tanpa biaya. Tanpa perlu perangkat fisik, OCNOS VM dapat dijalankan pada *hypervisor* populer seperti **KVM, VirtualBox,** dan **VMware**.
@@ -85,7 +85,7 @@ Semua fungsionalitas dasar Layer 2, Layer 3, dan multicast tersedia. Dukungan MP
 
 ## Ubuntu
 
-<img src="assets/gitbook/images/Ubuntu.webp" alt="Logo Ubuntu" width="25%">
+<img src="{{ '/assets/gitbook/images/Ubuntu.webp' | relative_url }}" alt="Logo OcNOS" width="35%">
 <br>
 
 Ubuntu adalah salah satu distribusi Linux yang paling populer dan dikembangkan oleh Canonical. Sistem operasi ini bersifat **open-source**, stabil, dan memiliki dukungan komunitas yang luas. Ubuntu tersedia dalam dua varian utama:

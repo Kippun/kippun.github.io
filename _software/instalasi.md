@@ -138,32 +138,32 @@ Selanjutnya pada toolbar di bagian atas layar Oracle Virtual Machine, pilih tool
     - Subtype: Ubuntu
     - Version: Ubuntu (64-bit)
 
-![Alt Text](assets/gitbook/images/sbs_ubuntu/01.png)
+![Alt Text](/assets/gitbook/images/sbs_ubuntu/01.png)
 
 - Unattend Install
     - Username: (Menyesuaikan, disini menggunakan ubuntu22)
     - Password & Repeat Password: Gunakan katasandi sesuai kebutuan dan mudah diingat
 
-![Alt Text](assets/gitbook/images/sbs_ubuntu/02.png)
+![Alt Text](/assets/gitbook/images/sbs_ubuntu/02.png)
 
 - Hardware
     - Base Memory: 1024 MB (1 GB Memory, lebih besar lebih baik)
     - Processor: 1 CPU (lebih besar lebih baik)
 
-![Alt Text](assets/gitbook/images/sbs_ubuntu/03.png)
+![Alt Text](/assets/gitbook/images/sbs_ubuntu/03.png)
 
 - Hard Disk
     - Hard Disk File Location and Size: 20GB (untuk ukuran 20 GB sudah sangat bagus, lebih besar lebih baik namun tidak dianjurkan karena boros reosurce device dari host itu sendiri)
 
-![Alt Text](assets/gitbook/images/sbs_ubuntu/04.png)
+![Alt Text](/assets/gitbook/images/sbs_ubuntu/04.png)
 
 Setelah melakukan konfigurasi pada Ubuntu, kemudian jalankan Ubuntu VM dan lakukan instalasi sumber daya.
 
-![Alt Text](assets/gitbook/images/sbs_ubuntu/05.png)
+![Alt Text](/assets/gitbook/images/sbs_ubuntu/05.png)
 
 Jika sudah mengunduh semua sumber daya, maka Ubuntu akan melakukan reboot dan akan memulai ulang boot seperti biasa Pada tahap ini tampilan CLI Ubuntu sudah muncul dan akan diminta untuk memasukkan username dan password yang sebelumnya sudah dibuat pada tahap konfigurasi **Unattend Install**.
 
-![Alt Text](assets/gitbook/images/sbs_ubuntu/06.png)
+![Alt Text](/assets/gitbook/images/sbs_ubuntu/06.png)
 
 Apabila login berhasil, tampilan yang muncul akan seperti pada gambar, ditandai dengan pesan "Welcome to Ubuntu" dan prompt **ubuntu22@ubuntu22:~$**. Hal ini menandakan bahwa proses instalasi dan login telah berhasil.
 
