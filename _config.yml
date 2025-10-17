@@ -1,6 +1,6 @@
 # Configurations
 title:            Home
-longtitle:        Cara Melakukan Integrasi OcNOS dengan Ubuntu pada VirtualBox
+longtitle:        Strategi Network Disaggregation dengan Cassini dan DCSG
 author:           A. Kiflan Jiyaad Mafazi & Muhammad Rizki Akbar
 description: >
   Build Jekyll documentation site with the GitBook style.
@@ -8,7 +8,7 @@ description: >
 version:          1.0
 gitbook_version:  3.2.3
 
-url: 'https://Kippun.github.io'
+url: 'https://kippun.github.io'
 baseurl: ''
 rss:              RSS
 

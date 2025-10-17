@@ -21,7 +21,7 @@ Tujuan utama integrasi ini adalah:
 
 Buka OcNOS dalam Virtual Machine
 
-![Alt Text](/assets/gitbook/images/step_ocnos/01.png)
+![image](/assets/gitbook/images/step_ocnos/01.png)
 <br>
 
 Gunakan perintah berikut untuk melakukan konfigurasi pada IP di OcNOS
@@ -39,7 +39,7 @@ OcNOS(config)#do ping 192.168.80.1
 
 Setelah melakukan konfigurasi menggunakan perintah tersebut maka hasil yang muncul seperti gambar berikut
 
-![Alt Text](/assets/gitbook/images/step_ocnos/02.png)
+![image](/assets/gitbook/images/step_ocnos/02.png)
 
 > *Jika terjadi RTO (Request Time Out) maka IP yang dikonfigurasi tidaklah berhasil. Ulangi langkah pada saat konfigurasi pengaturan OcNOS atau perintah yang dimasukkan tidaklah sesuai.*
 
@@ -70,7 +70,7 @@ Untuk melakukan intrgrasi OcNOS VM dengan Ubuntu VM, pertama konfigurasi OcNOS d
 - Promiscuous Mode: Allow All
 - Check Box pada Cable Connected pastikan tercentang
 
-![Alt Text](/assets/gitbook/images/step_ubuntu/01.png)
+![image](/assets/gitbook/images/step_ubuntu/01.png)
 
 Pertama jalankan CLI Ubuntu dan gunakan perintah berikut untuk melakukan konfigurasi pada IPnya dan lanjut mengisikan password untuk mengakses super user.
 
@@ -91,7 +91,7 @@ ping 192.168.80.2
 ```
 <br>
 
-![Alt Text](/assets/gitbook/images/step_ubuntu/02.png)
+![image](/assets/gitbook/images/step_ubuntu/02.png)
 <br>
 Selanjutnya buka OcNOS dan lakukan uji ping menggunakan IP Ubuntu dengan perintah berikut
 
@@ -116,17 +116,17 @@ Untuk konfigurasi agar VM OcNOS bisa terhubung (tes menggunakan ping) ke sesama 
 
 Pertama buat *clone*/salinan dari VM OcNOS dengan cara masuk ke dalam Oracle VirtualBox terlebih dahulu dengan cara klik kanan pada VM OcNOS dan pilih menu "clone" atau bisa dengan cara klik kiri sekali pada VM yang dituju kemudian gunakan kombinasi tombol "ctrl + o" dengan fungsi yang sama untuk melakukan *clone*.
 
-![Alt Text](/assets/gitbook/images/sbs_ocnosclone/01.png)
+![image](/assets/gitbook/images/sbs_ocnosclone/01.png)
 <br>
 
 Selanjutnya akan tampil menu untuk melakukan *clone*, selanjutnya biarkan secara default untuk proses ini dan untuk melanjutkan proses penyalinan VM bisa dengan klik menu Finish.
 
-![Alt Text](/assets/gitbook/images/sbs_ocnosclone/02.png)
+![image](/assets/gitbook/images/sbs_ocnosclone/02.png)
 <br>
 
 Pada tahap ini proses untuk melakukan *clone* pada Virtual Machine akan berjalan dan jika prosesnya sudah selesai maka VM yang sebelumnya disalin akan muncul pada sidebar Oracle VBox sesuai dengan penamaan yang diberikan pada saat proses menyalin VM.
 
-![Alt Text](/assets/gitbook/images/sbs_ocnosclone/03.png)
+![image](/assets/gitbook/images/sbs_ocnosclone/03.png)
 <br>
 
 Setelahnya masuk ke settings pada OcNOS dan juga OcNOS VM kemudian pilih menu Network, selanjutnya pada adapter 2 - 4 ikuti konfigurasi berikut
@@ -135,7 +135,7 @@ Setelahnya masuk ke settings pada OcNOS dan juga OcNOS VM kemudian pilih menu Ne
 - Promiscuous Mode: Allow All
 - Cable Connected: Centang
 
-![Alt Text](/assets/gitbook/images/sbs_ocnosclone/04.png)
+![image](/assets/gitbook/images/sbs_ocnosclone/04.png)
 <br>
 
 Selanjutnya buka VM OcNOS dan VM OcNOS Clone secara bersamaan dan login untuk melanjutkan ke tahap konfigurasi dengan kode berikut.
@@ -159,12 +159,12 @@ OcNOS config #do show ip int brief
 ```
 > *pada salah satu VM OcNOS diubah IP bagian subnet 192.168.80.x/24 yang mana untuk bisa terhubung harus menggunakan oktet yang sama pada 1-3 dan untuk oktet ke 4 saja yang diubah*
 
-![Alt Text](/assets/gitbook/images/sbs_ocnosclone/06.png)
+![image](/assets/gitbook/images/sbs_ocnosclone/06.png)
 <br>
 
 Jika sudah mengubah IP pada eth0, maka coba uji ping dengan menggunakan ping lawannya, dengan contoh jika pada OcNOS biasa menggunakan IP 192.168.80.2 maka menggunakan *command* do ping 192.168.80.3 begitu juga sebaliknya.
 
-![Alt Text](/assets/gitbook/images/sbs_ocnosclone/07.png)
+![image](/assets/gitbook/images/sbs_ocnosclone/07.png)
 
 > *tanda gagalnya terhubung antara dua VM yaitu tidak terjadi RTO (Request Time Out) dan berhasil jika kedua VM memberikan feedback berupa ICMP Echo seperti yang ada di gambar*
 
@@ -196,7 +196,7 @@ OcNOS config #do show ip int brief
 
 > *pada tahap ini sudah selesai melakukan konfigurasi pada eth1-eth3 dengan memberikan IP pada setiap ethernet, untuk kode tersebut gunakan pada OcNOS biasa dan OcNOS clone dengan menggunakan subnet yang berbeda pada setiap VMnya*
 
-![Alt Text](/assets/gitbook/images/sbs_ocnosclone/08.png)
+![image](/assets/gitbook/images/sbs_ocnosclone/08.png)
 <br>
 
 Setelah melakukan konfigurasi pada kedua VM, tahap selanjutnya yaitu melakukan uji ping menggunakan IP lawan dari VMnya. Jika pada tahap ini sudah berhasil terhubung maka konfigurasi untuk terhubung antara dua VM OcNOS sudah berhasil.
@@ -213,7 +213,7 @@ Untuk melakukan konfigurasi tersebut, pertama masuk ke dalam Oracle VirtualBox d
 - Promiscuous Mode: Allow All
 - Cable Connected: Centang
 
-![Alt Text](/assets/gitbook/images/sbs_ubuntunew/01.png)
+![image](/assets/gitbook/images/sbs_ubuntunew/01.png)
 
 Setelah melakukan konfigurasi pada Ubuntu, selanjutnya nyalakan Ubuntu VM dan OcNOS VM yang sebelumnya sudah dilakukan konfigruasi dan masukkan user serta password untuk melanjutkan.
 
@@ -230,7 +230,7 @@ sudo ip link set enp0s9 up
 sudo ip link set enp0s10 up
 ```
 
-![Alt Text](/assets/gitbook/images/sbs_ubuntunew/02.png)
+![image](/assets/gitbook/images/sbs_ubuntunew/02.png)
 
 Selanjutnya yaitu melakukan uji ping dari VM Ubuntu maupun VM OcNOS menggunakan perintah berikut
 
@@ -244,4 +244,4 @@ OcNOS
 do ping 192.168.80.5
 ```
 
-![Alt Text](/assets/gitbook/images/sbs_ubuntunew/03.png)
+![image](/assets/gitbook/images/sbs_ubuntunew/03.png)

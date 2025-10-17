@@ -2,19 +2,7 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/gitbook/custom.css">
 
 {%- if page.url == "/" -%}
-    <title>{{ site.title | escape }} · Home</title>
-
-{%- elsif page.collection == "posts" or page.path contains "_posts" -%}
-    <title>{{ page.title | escape }} · Posts</title>
-
-{%- elsif page.collection == "software" or page.path contains "_software" -%}
-    <title>{{ page.title | escape }} · Software</title>
-
-{%- elsif page.collection == "hardware" or page.path contains "_hardware" -%}
-    <title>{{ page.title | escape }} · Hardware</title>
-
-{%- elsif page.collection == "other" or page.path contains "_other" -%}
-    <title>{{ page.title | escape }} · Other</title>
+    <title>{{ site.title | escape }}</title>
 
 {%- else -%}
     <title>{{ page.title | escape }}</title>
