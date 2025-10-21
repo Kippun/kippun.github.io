@@ -1,6 +1,6 @@
 ---
 title: Modul Perangkat
-author: A. Kiflan Jiyaad Mafazi. A & Muhammad Rizki Akbar
+author: A. Kiflan Jiyaad Mafazi. A
 date: 2025-10-10
 category: Jekyll
 layout: post
@@ -38,7 +38,7 @@ Secara garis besar, proses kerjanya meliputi tahapan berikut:
 ### 2. Spesifikasi Teknis Umum
 
 | Parameter | Nilai / Deskripsi |
-|------------|--------------------|
+| --- | --- |
 | **Merek** | LUMENTUM |
 | **Form Factor** | CFP2 (C Form-factor Pluggable 2) |
 | **Teknologi** | Coherent Optical Transmission |
@@ -50,6 +50,8 @@ Secara garis besar, proses kerjanya meliputi tahapan berikut:
 | **Interface ke Fiber** | Duplex LC / SC atau konektor optik khusus |
 | **Jarak Transmisi Maksimal** | Hingga 80km |
 | **Kompatibilitas Standar** | CFP MSA, ITU-T G.698, OIF-400ZR (tergantung vendor) |
+
+> **Dokumentasi modul bisa dilihat dengan klik** [**tautan berikut**](https://resource.fs.com/mall/doc/20240307155949t12wsr.pdf). 
 
 ### 3. Fungsi dan Manfaat dalam Arsitektur Cassini
 
@@ -77,7 +79,6 @@ Selain itu, perangkat host harus memiliki sistem operasi jaringan (NOS) yang men
 - **OcNOS RON (Research Optical Network build)**, atau  
 - **SONiC dengan Coherent Optics Extension**.
 
-> **Dokumentasi modul bisa dilihat dengan klik** [**tautan berikut**](https://resource.fs.com/mall/doc/20240307155949t12wsr.pdf). 
 
 ---
 
@@ -86,7 +87,7 @@ Selain itu, perangkat host harus memiliki sistem operasi jaringan (NOS) yang men
 <img src="{{ '/assets/gitbook/images/alt/ftlc9558repm.webp' | relative_url }}" alt="Modul FTLC9558REPM" width="50%">
 <br>
 
-QSFP28 merupakan jenis modul transceiver hot-pluggable yang dirancang untuk koneksi data berkecepatan tinggi hingga 100 Gigabit Ethernet di pusat data dan jaringan telekomunikasi. QSPF28 memiliki singkatan dari "Q" yaitu Quad yang berarti memiliki 4 saluran dan "SFP" merujuk pada Small Form-factor Pluggable yang merupakan modul kecil ringkas yang digunakan untuk menghubungkan perangkat jaringan seperti switch dan router ke kabel serat optik atau tembaga.
+QSFP28 merupakan jenis modul **transceiver hot-pluggable** yang dirancang untuk koneksi data berkecepatan tinggi hingga **100 Gigabit Ethernet** di pusat data dan jaringan telekomunikasi. QSPF28 memiliki singkatan dari "Q" yaitu Quad yang berarti memiliki 4 saluran dan "SFP" merujuk pada Small Form-factor Pluggable yang merupakan modul kecil ringkas yang digunakan untuk menghubungkan perangkat jaringan seperti switch dan router ke kabel serat optik atau tembaga.
 
 ### 1. Prinsip Kerja
 
@@ -125,6 +126,8 @@ Secara garis besar, proses transmisinya dapat dijelaskan sebagai berikut:
 | **Konektor Optik** | MPO-12 receptacle (female) |
 | **Antarmuka Listrik** | 4 x 25 Gbps (CAUI-4 style) |
 
+> **Dokumentasi modul bisa dilihat dengan klik** [**tautan berikut**](https://www.epsglobal.com/Media-Library/EPSGlobal/Products/files/finisar/transceivers/FTLC9558REPM.pdf).
+
 ### 3. Fungsi dan Manfaat dalam Arsitektur Cassini
 
 Dalam sistem **Edgecore Cassini**, modul QSFP26 seperti FTLC9558REPM digunakan untuk lapisan Ethernet switching dan data aggregation, tidak seperti CFP2-DCO yang digunakan untuk transport optik jarak jauh.
@@ -151,8 +154,6 @@ Peran dan manfaatnya dapat dijelaskan sebagai berikut:
 | **Kepadatan Port Tinggi** | Mendukung hingga 16 port QSFP 29 pada Cassini untuk throughput total > 1.6 Tb/s |
 | **Integrasi Mudah (Plug-and-Play)** | Tidak memerlukan konfigurasi optik atau tuning wavelength seperti modul coherent |
 
-> **Dokumentasi modul bisa dilihat dengan klik** [**tautan berikut**](https://www.epsglobal.com/Media-Library/EPSGlobal/Products/files/finisar/transceivers/FTLC9558REPM.pdf).
-
 ---
 
 ## SFP+ 10G (Youthton YSP96-8503M)
@@ -160,9 +161,13 @@ Peran dan manfaatnya dapat dijelaskan sebagai berikut:
 <img src="{{ '/assets/gitbook/images/alt/ysp96-8503m.webp' | relative_url }}" alt="Modul YSP96-8503M" width="30%">
 <br>
 
-SFP+ 10G merupakan jenis modul transceiver hot-pluggable yang dirancang untuk mendukung transmisi data berkecepatan tinggi hingga 10 Gigabit per detik (10 Gbps) pada jaringan Ethernet.
+**Youthton YSP96-8503M** adalah **transceiver optik SFP+ (Small Form-Factor Pluggable Plus)** yang dirancang untuk aplikasi **10-Gigabit Ethernet (10GBASE-SR/SW)**.  
 
-SFP+ merupakan singkatan dari Small Form-factor Pluggable Plus, yang merupakan versi pengembangan dari modul SFP (1 G). Modul ini banyak digunakan pada perangkat jaringan seperti switch, router, server, maupun perangkat penyimpanan jaringan (NAS dan SAN) untuk menyediakan konektivitas optik atau tembaga berkecepatan tinggi.
+SFP+ merupakan singkatan dari Small Form-factor Pluggable Plus, yang merupakan versi pengembangan dari modul SFP (1G). Modul ini banyak digunakan pada perangkat jaringan seperti switch, router, server, maupun perangkat penyimpanan jaringan (NAS dan SAN) untuk menyediakan konektivitas optik atau tembaga berkecepatan tinggi.
+
+Perangkat ini menggunakan **VCSEL laser 850 nm** dan **PIN photodiode receiver**, dengan kemampuan transmisi hingga **300 meter** pada **serat multimode (OM3)**.  
+
+Transceiver ini bersifat **hot-pluggable**, **compliant dengan SFP+ MSA dan IEEE 802.3ae**, serta mendukung **DDM (Digital Diagnostic Monitoring)** sesuai standar **SFF-8472**.
 
 | Parameter | Nilai / Deskripsi |
 | --- | --- |
@@ -177,6 +182,58 @@ SFP+ merupakan singkatan dari Small Form-factor Pluggable Plus, yang merupakan v
 | **Media Jenis** | Multi-Mode Fiber (MMF) OM3/OM4 |
 | **Optical Modulation** | 300m (OM3) / 400m (OM4) |
 | Digital Diagnostic Monitoring (DDM) | Supported |
+
+<p>
+   <b> Dokumentasi modul bisa dilihat dengan klik
+   <a href="/assets/gitbook/files/YSP96-8503M.pdf" target="_blank" rel="noopener noreferrer">
+      tautan berikut
+   </a>.
+   </b>
+</p>
+
+## Prinsip Kerja
+
+Modul **SFP+** berfungsi mengubah **sinyal listrik (electrical)** menjadi **sinyal optik (optical)** dan sebaliknya.  
+YSP96-8503M terdiri dari dua bagian utama:
+
+1. **Transmitter Section (TX)**  
+   - Menggunakan **850 nm VCSEL Laser** untuk mengubah data elektrik dari host menjadi sinyal cahaya.  
+   - Cahaya ini dikirim melalui serat multimode menggunakan konektor **LC duplex**.
+
+2. **Receiver Section (RX)**  
+   - Menggunakan **PIN photo-detector** untuk mendeteksi cahaya yang diterima.  
+   - Sinyal optik diubah kembali menjadi sinyal elektrik untuk diteruskan ke host device.
+
+> Jalur komunikasi 10 Gbps ini berjalan **dupleks penuh (full-duplex)**, dengan TX dan RX bekerja secara bersamaan di dua inti serat optik.
+
+## Spesifikasi Listrik dan Optik (Rangkuman)
+
+| Kategori | Parameter | Nilai / Rentang |
+|-----------|------------|----------------|
+| **Power Supply Voltage** | VCC | 3.13 – 3.46 V |
+| **Supply Current** | ICC | 300 mA (max) |
+| **TX Average Optical Power** | −7  to  −1 dBm |
+| **RX Sensitivity** | ≤ −11.1 dBm (BER < 10⁻¹²) |
+| **Wavelength Range** | 840 – 860 nm |
+| **Extinction Ratio** | ≥ 3.5 dB |
+| **Rise/Fall Time** | 50 ps (typ) |
+| **Operating Temp. Ranges** | C: −5 ~ 70 °C • E: −20 ~ 80 °C • I: −40 ~ 85 °C |
+| **Digital Diagnostics** | Temp, Vcc, TX/RX Power, Bias Current |
+
+## Fungsi dan Manfaat dalam Arsitektur Cassini
+
+Dalam sistem **Edgecore Cassini (AS7716-24SC)** — platform open optical switch 3.2 Tbps —  
+Youthton YSP96-8503M digunakan sebagai **optical interface 10 GbE** di port **QSFP28 breakout (4×10G)** atau **SFP+ slot pada line-card**.
+
+### Fungsi dalam arsitektur Cassini:
+1. **Transceiver Access Layer**  
+   Menghubungkan Cassini ke perangkat akses (server, router, atau node metro) menggunakan serat multimode.
+2. **Penghubung antar line-card**  
+   Memberikan konektivitas optik antar modul 10 GbE atau antar chassis.  
+3. **Monitoring & Diagnostik Real-time**  
+   DDM memungkinkan Cassini memantau tegangan, suhu, dan daya optik melalui NOS (OcNOS, SONiC, dll).
+4. **Hot-Swappable Maintenance**  
+   Modul dapat dilepas/pasang tanpa mematikan sistem, meningkatkan ketersediaan jaringan.
 
 ---
 
