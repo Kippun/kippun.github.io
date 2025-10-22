@@ -51,7 +51,7 @@ Secara garis besar, proses kerjanya meliputi tahapan berikut:
 | **Jarak Transmisi Maksimal** | Hingga 80km |
 | **Kompatibilitas Standar** | CFP MSA, ITU-T G.698, OIF-400ZR (tergantung vendor) |
 
-> **Dokumentasi modul bisa dilihat dengan klik** [**tautan berikut**](https://resource.fs.com/mall/doc/20240307155949t12wsr.pdf). 
+> **Dokumentasi modul bisa dilihat dengan klik** [**tautan berikut**](https://resource.fs.com/mall/doc/20240307155949t12wsr.pdf){:target="_blank" rel="noopener"}. 
 
 ### 3. Fungsi dan Manfaat dalam Arsitektur Cassini
 
@@ -126,7 +126,7 @@ Secara garis besar, proses transmisinya dapat dijelaskan sebagai berikut:
 | **Konektor Optik** | MPO-12 receptacle (female) |
 | **Antarmuka Listrik** | 4 x 25 Gbps (CAUI-4 style) |
 
-> **Dokumentasi modul bisa dilihat dengan klik** [**tautan berikut**](https://www.epsglobal.com/Media-Library/EPSGlobal/Products/files/finisar/transceivers/FTLC9558REPM.pdf).
+> **Dokumentasi modul bisa dilihat dengan klik** [**tautan berikut**](https://www.epsglobal.com/Media-Library/EPSGlobal/Products/files/finisar/transceivers/FTLC9558REPM.pdf){:target="_blank" rel="noopener"}.
 
 ### 3. Fungsi dan Manfaat dalam Arsitektur Cassini
 
@@ -184,11 +184,8 @@ Transceiver ini bersifat **hot-pluggable**, **compliant dengan SFP+ MSA dan IEEE
 | Digital Diagnostic Monitoring (DDM) | Supported |
 
 <p>
-   <b> Dokumentasi modul bisa dilihat dengan klik
-   <a href="/assets/gitbook/files/YSP96-8503M.pdf" target="_blank" rel="noopener noreferrer">
-      tautan berikut
-   </a>.
-   </b>
+   <b> Dokumentasi terkait bisa mengikuti <a href="/assets/gitbook/files/YSP96-8503M.pdf" target="_blank" rel="noopener noreferrer">
+   tautan berikut ini</a>.</b>
 </p>
 
 ## Prinsip Kerja
@@ -249,7 +246,7 @@ Duplex LC (Lucent Connector) merupakan kabel transmisi data optik yang dirancang
 
 Kabel dengan tipe duplex LC pada lingkup perangkat seperti Cassini dan DCSG cocok untuk modul seperti SFP+ 10G dan CFP2-DCO yang membutuhkan tipe port perangkat SFP
 
-> **Dokumentasi modul bisa dilihat dengan klik** [**tautan berikut**](https://assets.tripplite.com/product-pdfs/en/n37015m.pdf).
+> **Dokumentasi modul bisa dilihat dengan klik** [**tautan berikut**](https://assets.tripplite.com/product-pdfs/en/n37015m.pdf){:target="_blank" rel="noopener"}.
 
 ---
 
@@ -262,4 +259,4 @@ Kabel MPO12 adalah jenis kabel serat optik dengan kapasitas tinggi yang memiliki
 
 Kabel MPO12 sangan cocok untuk aplikasi seperti 40G dan 100G, serta dapat dipecah menjadi jaringan yang lebih kecil lagi seperti 4 x 10G atau 3 x 10G menggunakan kabel *breakout*
 
-> **Dokumentasi modul bisa dilihat dengan klik** [**tautan berikut**](https://resource.fs.com/mall/doc/202306051416070c94mg.pdf).
+> **Dokumentasi modul bisa dilihat dengan klik** [**tautan berikut**](https://resource.fs.com/mall/doc/202306051416070c94mg.pdf){:target="_blank" rel="noopener"}.

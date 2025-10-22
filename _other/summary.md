@@ -59,7 +59,7 @@ Berikut adalah keterbatasan yang teridentifikasi selama pengujian menggunakan fi
 
 <div class="image-row">
     <div class="image-column">
-        <img src="/assets/gitbook/images/alt/cfp2-dco_status.png" alt="Status LED 1">
+        <img src="/assets/gitbook/images/alt/cfp2-dco_status1.png" alt="Status LED 1">
         <p class="caption">
             Cek status CFP2-DCO tidak tampil pada CLI OcNOS
         </p>
@@ -86,19 +86,53 @@ Berikut adalah keterbatasan yang teridentifikasi selama pengujian menggunakan fi
 | **Gunakan ONIE Mode untuk Install Baru** | Reinstall melalui ONIE agar sistem bersih, mendeteksi storage, dan memunculkan file `/etc/onie-release`. Hal ini memastikan bootloader mengenali hardware sepenuhnya. |
 | **Verifikasi Lisensi Optical Transport** | Hubungi IP Infusion / Edgecore untuk lisensi RON/ADVANCED agar fitur DCO dapat diaktifkan. |
 | **Update ke Versi Minimal OcNOS 2.0+** | Versi ini sudah menyertakan dukungan CFP2-DCO standar (Finisar, Fujitsu, Acacia) dan mendukung *coherent optical telemetry*. |
-| **Gunakan Build ADVANCED jika RON Tidak Tersedia** | Build ADVANCED mengaktifkan fitur Optical Transport dan OTN meski bukan RON penuh. Cocok untuk lab testing tanpa lisensi khusus. |
 
 ## 6. Alasan Teknis Perlunya Upgrade
 
 - **Build 1.1.0.2 (IPBASE)** berfokus pada routing layer, bukan optical transport.  
 - **Build RON / ADVANCED** menambahkan dukungan *DWDM, OTN, dan coherent control* sesuai arsitektur Cassini.  
-- Tanpa build tersebut, **komponen CFP2-DCO dan slot optical line card menjadi tidak aktif**, menyebabkan Cassini hanya berfungsi seperti *switch 100G biasa*.  
+- Tanpa build yang mendukung pada OcNOS **versi 2.0 keatas**, fitur yang dimiliki sangat terbatas dan membuat fitur berupa mengaktifkan modul CFP2-DCO tidak bisa digunakan serta . 
 - Dengan upgrade firmware, Cassini bisa menjalankan perannya sebagai **open optical platform**, mendukung *long-haul link*, *DWDM control*, dan *telemetry monitoring*.
 
 ## 7. Kesimpulan
 
 Cassini dengan build **OcNOS 1.1.0.2 - OTN_IPBASE** masih berfungsi untuk operasi jaringan dasar (Layer 2/3), namun belum dapat digunakan untuk fungsi utama sebagai **optical transport system**.  
 Untuk mengaktifkan fitur CFP2-DCO dan coherent optics, **diperlukan upgrade software ke build RON atau ADVANCED**, melalui **reinstall via ONIE** dan **aktivasi lisensi optical** dari vendor.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 
