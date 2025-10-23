@@ -8,6 +8,19 @@ layout: post
 
 ---
 
+# Jenis Modul dan Arsitektur Jalur Transmisi Ethernet
+
+Tabel berikut menjelaskan jenis-jenis modul optik berdasarkan kecepatan, arsitektur jalur transmisi, dan karakteristik utamanya. Informasi ini penting untuk memahami kompabilitas dan fungsi port pada perangkat seperti Cassini AS7716-24SC, yang mendukung berbagai jenis modul berkecepatan tinggi.
+
+| Kecepatan | Nama Modul Umum | Arsitektur Jalur | Keterangan Utama |
+| --- | --- | --- | --- |
+|**1G** | SFP | 1 jalur Tx & 1 jalur Rx | Kecepatan dasar, umum untuk koneksi lama atau port manajemen. |
+| **10G** | SFP+ | 1 jalur Tx & 1 jalur Rx | Masih banyak digunakan di access layer atau server lama. |
+| **25G** | SFP28 | 1 jalur Tx & 1 jalur Rx | Standar baru yang efisien; dapat digunakan sebagai bagian dari breakout 10G. |
+| **40G** | QSFP+ | 4 jalur Tx & 4 jalur Rx (4 x 10G) | Generasi awal kecepatan tinggi; berbasis transmisi paralel 4 x 10G. |
+| **100G** | QSFP28 | 4 jalur Tx & 4 jalur Rx (4 x 25G) | Standar modern pada backbone dan aggregation switch. |
+| **200G** | QSFP56 / CFP2-DCO | 4 jalur (4 x 50G) atau Coherent | Mencapai 200G dengan modulasi PAM4 atau teknologi koheren (DCO) untuk jarak jauh. |
+
 # Modul Transceiver
 
 Bagian ini membahas secara mendalam berbagai modul transceiver yang kompatibel dengan perangkat Edgecore Cassini dan DCSG. Modul-modul ini berperan sebagai komponen inti yang mengubah sinyal listrik dari perangkat jaringan menjadi sinyal optik yang dapat ditransmisikan melalui serat optik, dan sebaliknya. Setiap jenis modul, seperti QSFP28, CFP2-DCO, dan SFP 10G, memiliki fungsi, kecepatan, dan teknologi yang berbeda sesuai dengan kebutuhan jaringan.
@@ -183,10 +196,7 @@ Transceiver ini bersifat **hot-pluggable**, **compliant dengan SFP+ MSA dan IEEE
 | **Optical Modulation** | 300m (OM3) / 400m (OM4) |
 | Digital Diagnostic Monitoring (DDM) | Supported |
 
-<p>
-   <b> Dokumentasi terkait bisa mengikuti <a href="/assets/gitbook/files/YSP96-8503M.pdf" target="_blank" rel="noopener noreferrer">
-   tautan berikut ini</a>.</b>
-</p>
+> <b>Dokumentasi terkait bisa mengikuti <a href="/assets/gitbook/files/YSP96-8503M.pdf" target="_blank" rel="noopener noreferrer">tautan berikut ini</a>.</b>
 
 ## Prinsip Kerja
 
@@ -209,13 +219,13 @@ YSP96-8503M terdiri dari dua bagian utama:
 |-----------|------------|----------------|
 | **Power Supply Voltage** | VCC | 3.13 – 3.46 V |
 | **Supply Current** | ICC | 300 mA (max) |
-| **TX Average Optical Power** | −7  to  −1 dBm |
-| **RX Sensitivity** | ≤ −11.1 dBm (BER < 10⁻¹²) |
-| **Wavelength Range** | 840 – 860 nm |
-| **Extinction Ratio** | ≥ 3.5 dB |
-| **Rise/Fall Time** | 50 ps (typ) |
-| **Operating Temp. Ranges** | C: −5 ~ 70 °C • E: −20 ~ 80 °C • I: −40 ~ 85 °C |
-| **Digital Diagnostics** | Temp, Vcc, TX/RX Power, Bias Current |
+| **TX Average Optical Power** | −7  to  −1 dBm | - |
+| **RX Sensitivity** | ≤ −11.1 dBm (BER < 10⁻¹²) | - |
+| **Wavelength Range** | 840 – 860 nm | - |
+| **Extinction Ratio** | ≥ 3.5 dB | - |
+| **Rise/Fall Time** | 50 ps (typ) | - |
+| **Operating Temp. Ranges** | C: −5 ~ 70 °C • E: −20 ~ 80 °C • I: −40 ~ 85 °C | - |
+| **Digital Diagnostics** | Temp, Vcc, TX/RX Power, Bias Current | - |
 
 ## Fungsi dan Manfaat dalam Arsitektur Cassini
 
@@ -248,6 +258,8 @@ Kabel dengan tipe duplex LC pada lingkup perangkat seperti Cassini dan DCSG coco
 
 > **Dokumentasi modul bisa dilihat dengan klik** [**tautan berikut**](https://assets.tripplite.com/product-pdfs/en/n37015m.pdf){:target="_blank" rel="noopener"}.
 
+Link penjualan produk ada pada [link berikut](https://www.tokopedia.com/mobitra/om3-lc-lc-duplex-2m-patch-cord-om3-lc-lc-duplex-multimode-2-meter?extParam=whid%3D13019683&aff_unique_id=&channel=others&chain_key=)
+
 ---
 
 ## MPO12
@@ -260,3 +272,5 @@ Kabel MPO12 adalah jenis kabel serat optik dengan kapasitas tinggi yang memiliki
 Kabel MPO12 sangan cocok untuk aplikasi seperti 40G dan 100G, serta dapat dipecah menjadi jaringan yang lebih kecil lagi seperti 4 x 10G atau 3 x 10G menggunakan kabel *breakout*
 
 > **Dokumentasi modul bisa dilihat dengan klik** [**tautan berikut**](https://resource.fs.com/mall/doc/202306051416070c94mg.pdf){:target="_blank" rel="noopener"}.
+
+Link penjualan produk ada pada [link berikut](https://www.tokopedia.com/inarafiber/mpo-to-mmpo-om4-12-core-female-to-female-30m-sr4-100g?extParam=whid%3D12264086&aff_unique_id=&channel=others&chain_key=)
