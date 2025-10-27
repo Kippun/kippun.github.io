@@ -262,7 +262,7 @@ Link penjualan produk ada pada [link berikut](https://www.tokopedia.com/mobitra/
 
 ---
 
-## MPO12
+## MPO12 OM3
 
 <img src="{{ '/assets/gitbook/images/alt/mpo12.webp' | relative_url }}" alt="Kabel MPO12" width="75%">
 <br>
