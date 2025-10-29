@@ -94,3 +94,4 @@ Berdasarkan hasil pemeriksaan dan data sistem:
 
 # Rankuman Perangkat DCSG AGCV208S
 
+Tidak bisa digunakan walau perangkatnya aktif.
