@@ -23,7 +23,6 @@ Instalasi Virtual Machine dilakukan untuk menyediakan hypervisor yang akan menja
 - Siapkan bahan terlebih dahulu:
     
     - Oracle Virtual box  : [Downloads – Oracle VirtualBox](https://download.virtualbox.org/virtualbox/7.1.6/VirtualBox-7.1.6-167084-Win.exe)
-    
     - Install image Ocnos pada link berikut : [OcNOS Virtual Machine (VM)](https://www.ipinfusion.com/products/ocnos-vm/)
 
 - Setelahnya akan diarahkan ke bagian dimana file dan folder akan di install.

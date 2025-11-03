@@ -8,14 +8,14 @@ layout: post
 
 ## Langkah SSH Ubuntu ke OcNOS menggunakan Oracle VBox
 
-Dalam proses belajar jaringan, integrasi antara Virtual Machine (VM) yang menjalankan OCNOS dan Ubuntu Server sebagai penghubung atau client adalah langkah penting untuk memahami bagaimana sistem operasi jaringan dapat dikonfigurasi dan diakses layaknya perangkat jaringan fisik. Dengan memanfaatkan VM, kita bisa melakukan simulasi tanpa harus menggunakan perangkat keras asli, sehingga lebih fleksibel, efisien, dan hemat biaya.
+Dalam proses pembelajaran jaringan, integrasi antara Virtual Machine (VM) yang menjalankan OCNOS dan Ubuntu Server sebagai penghubung atau client adalah langkah penting untuk memahami bagaimana sistem operasi jaringan dapat dikonfigurasi dan diakses layaknya perangkat jaringan fisik. Pemanfaatan VM memungkinkan simulasi dilakukan tanpa perangkat keras asli, sehingga lebih fleksibel, efisien, dan hemat biaya.
 
 Tujuan utama integrasi ini adalah:
 
 - Menyiapkan lingkungan OCNOS di VM agar memiliki alamat IP yang valid.
 - Menghubungkan OCNOS dengan VM Ubuntu melalui jaringan virtual.
 - Mengakses OCNOS via SSH sehingga administrasi bisa dilakukan secara remote, bukan hanya lewat console bawaan.
-- Melalui integrasi ini, kita bisa mendapatkan pengalaman yang mirip dengan pengelolaan switch/router sungguhan, namun dalam bentuk simulasi.
+- Melalui integrasi ini, akan didapatkan pengalaman yang mirip dengan pengelolaan switch/router sungguhan, namun dalam bentuk simulasi.
 
 ## Konfigurasi IP pada OcNOS di Virtual Machine
 
@@ -24,7 +24,7 @@ Buka OcNOS dalam Virtual Machine
 ![image](/assets/gitbook/images/step_ocnos/01.png)
 <br>
 
-Gunakan perintah berikut untuk melakukan konfigurasi pada IP di OcNOS
+Konfigurasi IP pada OcNOS dilakukan menggunakan perintah berikut:
 
 ```bash
 OcNOS>en
@@ -37,15 +37,15 @@ OcNOS(config-if)#exit
 OcNOS(config)#do ping 192.168.80.1
 ```
 
-Setelah melakukan konfigurasi menggunakan perintah tersebut maka hasil yang muncul seperti gambar berikut
+Setelah konfigurasi dilakukan, hasil yang muncul akan seperti gambar berikut:
 
 ![image](/assets/gitbook/images/step_ocnos/02.png)
 
-> *Jika terjadi RTO (Request Time Out) maka IP yang dikonfigurasi tidaklah berhasil. Ulangi langkah pada saat konfigurasi pengaturan OcNOS atau perintah yang dimasukkan tidaklah sesuai.*
+> *Jika terjadi RTO (Request Time Out), artinya konfigurasi IP tidak berhasil. Periksa kembali langkah pengaturan OcNOS atau pastikan perintah yang dimasukkan sudah sesuai.*
 
 <br>
 
-Jika melakukan ping menggunakan IP yang dibuat sudah berhasil maka lanjut untuk membuat user baru dengan command berikut
+Jika ping menggunakan IP yang dibuat sudah berhasil, langkah selanjutnya adalah membuat user baru dengan perintah berikut:
 
 ```bash
 OcNOS#config terminal
@@ -55,14 +55,14 @@ OcNOS(config)#end
 OcNOS#end
 ```
 
-> *Pada tahap ini melakukan simulasi menggunakan nama user "admin" dan password "admin123"*
+> *Sebagai contoh pada simulasi ini, nama user yang digunakan adalah "admin" dan password "admin123"*
 
 ## Akses OcNOS VM Melalui SSH dari Ubuntu VM
 
-Untuk melakukan intrgrasi OcNOS VM dengan Ubuntu VM, pertama konfigurasi OcNOS dengan membuat pada Network bagian Adapter 2, 3, dan 4 dengan konfigurasi berikut:
+Untuk melakukan integrasi OcNOS VM dengan Ubuntu VM, langkah pertama adalah konfigurasi OcNOS. Atur Network pada Adapter 2, 3, dan 4 dengan konfigurasi berikut:
 
 - Attached to: Bridged Adapter
-- Name: Setiap perangkat memiliki dua tipe yang berbeda (gunakan default)
+- Name: Pilihan nama adapter akan berbeda di setiap perangkat (gunakan default)
 - Adapter Type: Pada bagian ini setiap device memiliki tipe yang berbeda, gunakan tipe default seperti:
   - AMD PCNet FAST III (Am79C973)
   - Intel PRO/1000 MT Desktop (82540EM)
@@ -72,19 +72,19 @@ Untuk melakukan intrgrasi OcNOS VM dengan Ubuntu VM, pertama konfigurasi OcNOS d
 
 ![image](/assets/gitbook/images/step_ubuntu/01.png)
 
-Pertama jalankan CLI Ubuntu dan gunakan perintah berikut untuk melakukan konfigurasi pada IPnya dan lanjut mengisikan password untuk mengakses super user.
+Pertama, jalankan CLI Ubuntu dan gunakan perintah berikut untuk konfigurasi IP. Isikan password super user jika diminta.
 
 ```bash
 sudo ip addr add 192.168.80.3/24 dev enp0s3
 ```
 
-Lanjut menggunakan command untuk mengaktifkan interface enp0s3 agar bisa digunakan 
+Selanjutnya, gunakan perintah berikut untuk mengaktifkan interface enp0s3:
 
 ```bash
 sudo ip link set enp0s3 up
 ```
 
-Setelahnya lakukan uji sambung ping ke OcNOS dengan menggunakan IP yang sudah dibuat pada OcNOS (disini IP pada OcNOS menggunakan IP 192.168.80.2)
+Setelah itu, lakukan uji ping ke OcNOS menggunakan IP yang sudah dibuat (pada contoh ini IP OcNOS adalah 192.168.80.2):
 
 ```bash
 ping 192.168.80.2
@@ -93,43 +93,43 @@ ping 192.168.80.2
 
 ![image](/assets/gitbook/images/step_ubuntu/02.png)
 <br>
-Selanjutnya buka OcNOS dan lakukan uji ping menggunakan IP Ubuntu dengan perintah berikut
+Selanjutnya, dari OcNOS, lakukan uji ping ke IP Ubuntu dengan perintah berikut:
 
 ```bash
 do ping 192.168.80.3
 ```
 
-Jika kedua Operating System/Sistem Operasi (OS) sudah bisa saling terhubung, kemudian lanjut SSH dari Ubuntu ke OcNOS dengan perintah
+Jika kedua Sistem Operasi (OS) sudah bisa saling terhubung, lakukan SSH dari Ubuntu ke OcNOS dengan perintah:
 
 ```bash
 ssh admin@192.168.80.2
 ```
 
-Pastikan IP yang digunakan sama dengan yang ada pada OcNOS
+Pastikan IP yang dituju adalah IP OcNOS.
 
-Pada proses ini akan muncul verifikasi apakah pengguna setuju untuk terhubung ke IP yang dituju, jika iya maka ketik "yes" dan lanjut mengisikan password yang sudah dibuat pada OcNOS
-Pada tahap ini VM Ubuntu sudah berhasil Remote Login via SSH dan consol dari OcNOS menjadi server.
+Akan muncul verifikasi koneksi. Ketik "yes" untuk melanjutkan, lalu masukkan password yang sudah dibuat di OcNOS.
+Pada tahap ini, VM Ubuntu telah berhasil melakukan Remote Login via SSH, dan OcNOS bertindak sebagai server SSH.
 
 # Melakukan Konfigurasi Ping dari OcNOS ke OcNOS Menggunakan ethernet 1 - ethernet 3
 
-Untuk konfigurasi agar VM OcNOS bisa terhubung (tes menggunakan ping) ke sesama VM OcNOS dengan tujuan untuk bisa melakukan *real networking* dan mengetahui cara simulasi antara router yang berbeda bisa terhubung.
+Konfigurasi ini dilakukan agar VM OcNOS bisa terhubung (diuji menggunakan ping) ke sesama VM OcNOS. Tujuannya adalah untuk melakukan simulasi *real networking* dan memahami cara menghubungkan antar router yang berbeda.
 
-Pertama buat *clone*/salinan dari VM OcNOS dengan cara masuk ke dalam Oracle VirtualBox terlebih dahulu dengan cara klik kanan pada VM OcNOS dan pilih menu "clone" atau bisa dengan cara klik kiri sekali pada VM yang dituju kemudian gunakan kombinasi tombol "ctrl + o" dengan fungsi yang sama untuk melakukan *clone*.
+Pertama, buat *clone*/salinan dari VM OcNOS. Buka Oracle VirtualBox, lalu klik kanan pada VM OcNOS dan pilih menu "clone". Alternatifnya, klik kiri sekali pada VM lalu gunakan kombinasi tombol "ctrl + o".
 
 ![image](/assets/gitbook/images/sbs_ocnosclone/01.png)
 <br>
 
-Selanjutnya akan tampil menu untuk melakukan *clone*, selanjutnya biarkan secara default untuk proses ini dan untuk melanjutkan proses penyalinan VM bisa dengan klik menu Finish.
+Akan tampil menu *clone*. Biarkan pengaturan secara default dan klik Finish untuk melanjutkan.
 
 ![image](/assets/gitbook/images/sbs_ocnosclone/02.png)
 <br>
 
-Pada tahap ini proses untuk melakukan *clone* pada Virtual Machine akan berjalan dan jika prosesnya sudah selesai maka VM yang sebelumnya disalin akan muncul pada sidebar Oracle VBox sesuai dengan penamaan yang diberikan pada saat proses menyalin VM.
+Proses *clone* akan berjalan. Setelah selesai, VM salinan akan muncul di sidebar Oracle VBox sesuai penamaan yang dibuat.
 
 ![image](/assets/gitbook/images/sbs_ocnosclone/03.png)
 <br>
 
-Setelahnya masuk ke settings pada OcNOS dan juga OcNOS VM kemudian pilih menu Network, selanjutnya pada adapter 2 - 4 ikuti konfigurasi berikut
+Selanjutnya, masuk ke Settings pada OcNOS (VM asli) dan OcNOS Clone. Pilih menu Network, lalu terapkan konfigurasi berikut untuk adapter 2 - 4 di kedua VM:
 - Attached to: internal network
 - Name : intnet
 - Promiscuous Mode: Allow All
@@ -138,7 +138,7 @@ Setelahnya masuk ke settings pada OcNOS dan juga OcNOS VM kemudian pilih menu Ne
 ![image](/assets/gitbook/images/sbs_ocnosclone/04.png)
 <br>
 
-Selanjutnya buka VM OcNOS dan VM OcNOS Clone secara bersamaan dan login untuk melanjutkan ke tahap konfigurasi dengan kode berikut.
+Selanjutnya, jalankan VM OcNOS dan VM OcNOS Clone secara bersamaan. Lakukan login di keduanya untuk masuk ke tahap konfigurasi dengan kode berikut.
 
 ```bash
 OcNOS>en
@@ -147,7 +147,7 @@ OcNOS config #do show ip int brief
 ```
 <br>
 
-Maka pada OcNOS akan muncul tampilan output tabel status interface dari IP yang sebelumnya dibuat. Untuk bisa saling terhubung antara dua VM OcNOS, konfigurasi salah satu VM (bisa OcNOS maupun OcNOS yang sudah diclone) dengan mengubah subnet IPnya yaitu 192.168.x.x dengan contoh kode berikut.
+Akan muncul tampilan output tabel status interface dari IP yang sebelumnya dibuat. Agar kedua VM OcNOS bisa saling terhubung, salah satu VM perlu dikonfigurasi dengan alamat IP yang berbeda namun masih dalam satu subnet. Contoh kode berikut mengubah IP pada salah satu VM:
 
 ```bash
 OcNOS config #int eth0
@@ -157,20 +157,20 @@ OcNOS config-if #no shutdown
 OcNOS config-if #exit
 OcNOS config #do show ip int brief
 ```
-> *pada salah satu VM OcNOS diubah IP bagian subnet 192.168.80.x/24 yang mana untuk bisa terhubung harus menggunakan oktet yang sama pada 1-3 dan untuk oktet ke 4 saja yang diubah*
+> *Catatan: Agar bisa terhubung, kedua VM harus berada di subnet yang sama (misalnya 192.168.80.x/24). Pastikan oktet 1-3 sama, dan hanya oktet ke-4 yang berbeda untuk setiap VM.*
 
 ![image](/assets/gitbook/images/sbs_ocnosclone/06.png)
 <br>
 
-Jika sudah mengubah IP pada eth0, maka coba uji ping dengan menggunakan ping lawannya, dengan contoh jika pada OcNOS biasa menggunakan IP 192.168.80.2 maka menggunakan *command* do ping 192.168.80.3 begitu juga sebaliknya.
+Setelah IP diubah pada salah satu VM, lakukan uji ping ke IP VM lawannya. Contoh: jika VM OcNOS-1 menggunakan IP 192.168.80.2, jalankan `do ping 192.168.80.3` (begitu juga sebaliknya).
 
 ![image](/assets/gitbook/images/sbs_ocnosclone/07.png)
 
-> *tanda gagalnya terhubung antara dua VM yaitu tidak terjadi RTO (Request Time Out) dan berhasil jika kedua VM memberikan feedback berupa ICMP Echo seperti yang ada di gambar*
+> *Koneksi berhasil jika tidak terjadi RTO (Request Time Out) dan kedua VM memberikan balasan ICMP Echo. Jika RTO, berarti koneksi gagal.*
 
 <br>
 
-Untuk melakukan konfigurasi pada adapter 2 (eth1) hingga adapter 4 (eth3), yaitu sama dengan cara konfigurasi pada eth0 hanya saja dengan perbedaan penyesuaian seperti pada kode berikut.
+Konfigurasi untuk adapter 2 (eth1) hingga adapter 4 (eth3) mengikuti cara yang sama seperti eth0, hanya perlu penyesuaian IP-nya, seperti pada kode berikut.
 
 ```bash
 OcNOS #configure terminal
@@ -194,12 +194,12 @@ OcNOS config #write
 OcNOS config #do show ip int brief
 ```
 
-> *pada tahap ini sudah selesai melakukan konfigurasi pada eth1-eth3 dengan memberikan IP pada setiap ethernet, untuk kode tersebut gunakan pada OcNOS biasa dan OcNOS clone dengan menggunakan subnet yang berbeda pada setiap VMnya*
+> *Catatan: Kode tersebut dijalankan di salah satu VM (misal, OcNOS Clone). Untuk VM OcNOS (asli), gunakan IP yang berbeda di oktet terakhir (misal, 192.168.81.2/24, 192.168.82.2/24, dst.). Pastikan setiap pasangan interface (eth1 ke eth1, eth2 ke eth2) berada di subnet yang sama.*
 
 ![image](/assets/gitbook/images/sbs_ocnosclone/08.png)
 <br>
 
-Setelah melakukan konfigurasi pada kedua VM, tahap selanjutnya yaitu melakukan uji ping menggunakan IP lawan dari VMnya. Jika pada tahap ini sudah berhasil terhubung maka konfigurasi untuk terhubung antara dua VM OcNOS sudah berhasil.
+Setelah konfigurasi di kedua VM, lakukan uji ping ke IP lawan untuk setiap interface. Jika semua berhasil, koneksi antar VM OcNOS telah berhasil.
 
 # Melakukan Konfigurasi untuk ethernet 1 - ethernet 3 untuk Terhubung dari Ubuntu ke OcNOS
 
@@ -207,7 +207,7 @@ Dalam proses implementasi jaringan berbasis VirtualBox, setiap mesin virtual dap
 
 Konfigurasi ini bertujuan agar mesin virtual Ubuntu dapat terhubung secara langsung dengan mesin virtual OcNOS, sehingga komunikasi data seperti ping test maupun pertukaran paket dapat dilakukan melalui jaringan internal tanpa bergantung pada koneksi eksternal. Dengan demikian, pengujian dan simulasi jaringan dapat berjalan lebih fleksibel dan mendekati kondisi nyata dalam penerapan perangkat jaringan.
 
-Untuk melakukan konfigurasi tersebut, pertama masuk ke dalam Oracle VirtualBox dan pada VM Ubuntu masuk ke pengaturan pada Settings kemudian masuk ke menu Network. Pada tampilan menu Network, masuk ke dalam tab adapter 1 dan ubah konfigruasi berikut hingga ke adapter 3.
+Untuk melakukan konfigurasi, buka Oracle VirtualBox dan masuk ke Settings VM Ubuntu. Buka menu Network, lalu terapkan konfigurasi berikut untuk Adapter 1 hingga Adapter 3.
 - Attached to: Internal Network
 - Name: intnet
 - Promiscuous Mode: Allow All
@@ -215,9 +215,9 @@ Untuk melakukan konfigurasi tersebut, pertama masuk ke dalam Oracle VirtualBox d
 
 ![image](/assets/gitbook/images/sbs_ubuntunew/01.png)
 
-Setelah melakukan konfigurasi pada Ubuntu, selanjutnya nyalakan Ubuntu VM dan OcNOS VM yang sebelumnya sudah dilakukan konfigruasi dan masukkan user serta password untuk melanjutkan.
+Setelah konfigurasi, nyalakan Ubuntu VM dan OcNOS VM yang sebelumnya sudah dikonfigurasi. Masukkan user dan password untuk melanjutkan.
 
-Tahap selanjutnya merupakan konfigurasi untuk IP pada setiap adapter 0 hingga adapter 3 menggunakan kode berikut
+Tahap selanjutnya adalah konfigurasi IP di Ubuntu untuk setiap adapter (0 hingga 3) menggunakan perintah berikut:
 
 ```bash
 sudo ip addr add 192.168.80.5/24 dev enp0s3
@@ -232,7 +232,7 @@ sudo ip link set enp0s10 up
 
 ![image](/assets/gitbook/images/sbs_ubuntunew/02.png)
 
-Selanjutnya yaitu melakukan uji ping dari VM Ubuntu maupun VM OcNOS menggunakan perintah berikut
+Selanjutnya, lakukan uji ping dua arah (dari Ubuntu ke OcNOS dan sebaliknya) untuk memverifikasi koneksi:
 
 Ubuntu
 ```bash

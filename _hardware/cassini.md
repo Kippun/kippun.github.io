@@ -46,7 +46,7 @@ layout: post
 - **Port tetap 16×QSFP28**: untuk koneksi 100G (atau mode 40G), tiap port mendukung breakout (4 × 25G atau 4 × 10G). LED pada tiap QSFP28 menunjukan mode link (biru = 100G, oranye = 40G, putih/green untuk breakout).
 - **8 slot line-card**: bisa diisi ACO (analog coherent optics CFP2), DCO (digital coherent optics CFP2), atau QSFP28 expansion card — memungkinkan konfigurasi hybrid (client non-coherent + line-side coherent). Rasio non-coherent : coherent yang didukung bisa fleksibel (mis. 1:1 sampai 15:1 tergantung skenario).
 
-### 3. DCO vs ACO vs QSFP28 (singkat)
+### 3. DCO vs ACO vs QSFP28
 - **QSFP28** = transceiver non-coherent 100G (client side).  
 - **ACO** (analog coherent optics) dan **DCO** (digital coherent optics) adalah opsi line-side untuk transmisi DWDM jarak jauh; DCO biasanya menawarkan kemampuan hot-swap di platform ini (catatan: line-card DCO mendukung hot-swap, ACO dan QSFP28 **tidak** — pasang ACO/QSFP28 saat sistem mati).
 

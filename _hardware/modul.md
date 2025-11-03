@@ -31,15 +31,15 @@ Bagian ini membahas secara mendalam berbagai modul transceiver yang kompatibel d
 <img src="{{ '/assets/gitbook/images/alt/sfp2-dco.webp' | relative_url }}" alt="Modul SFP2-DCO" width="40%">
 <br>
 
-Modul **CFP2-DCO (Coherent CFP2-Digital Coherent Optics)** merupakan salah satu jenis *pluggable optical transceiver* yang digunakan pada perangkat jaringan optik berkecepatan tinggi seperti **Edgecore Cassini** dan sistem **Disaggregated Optical Transport Network (OTN)**.  
-CFP2-DCO berfungsi untuk mengonversi sinyal digital dari perangkat jaringan menjadi sinyal optik yang dapat ditransmisikan melalui serat optik jarak jauh menggunakan teknologi **coherent detection**.
+Modul CFP2-DCO (Coherent CFP2-Digital Coherent Optics) merupakan salah satu jenis *pluggable optical transceiver* yang digunakan pada perangkat jaringan optik berkecepatan tinggi seperti Edgecore Cassini dan sistem Disaggregated Optical Transport Network (OTN).
+CFP2-DCO berfungsi untuk mengonversi sinyal digital dari perangkat jaringan menjadi sinyal optik yang dapat ditransmisikan melalui serat optik jarak jauh menggunakan teknologi coherent detection.
 
-Modul ini menjadi komponen penting dalam sistem transport optik modern karena mendukung **kecepatan transmisi hingga 200 Gbps atau lebih**, serta efisiensi tinggi dalam penggunaan spektrum optik.
+Modul ini menjadi komponen penting dalam sistem transport optik modern karena mendukung kecepatan transmisi hingga 200 Gbps atau lebih, serta efisiensi tinggi dalam penggunaan spektrum optik.
 
 ### 1. Prinsip Kerja
 
-CFP2-DCO bekerja berdasarkan teknologi **coherent optical communication**, di mana sinyal cahaya tidak hanya membawa informasi dalam bentuk intensitas, tetapi juga dalam fase dan polarisasi.  
-Sinyal ini kemudian diproses secara digital oleh **Digital Signal Processor (DSP)** yang tertanam di dalam modul.
+CFP2-DCO bekerja berdasarkan teknologi coherent optical communication, di mana sinyal cahaya tidak hanya membawa informasi dalam bentuk intensitas, tetapi juga dalam fase dan polarisasi.  
+Sinyal ini kemudian diproses secara digital oleh Digital Signal Processor (DSP) yang tertanam di dalam modul.
 
 Secara garis besar, proses kerjanya meliputi tahapan berikut:
 
@@ -68,7 +68,7 @@ Secara garis besar, proses kerjanya meliputi tahapan berikut:
 
 ### 3. Fungsi dan Manfaat dalam Arsitektur Cassini
 
-Dalam perangkat **Edgecore Cassini** atau platform OTN sejenis, CFP2-DCO berperan sebagai **optical line interface** pada *line card slot*. Fungsi utamanya meliputi:
+Dalam perangkat Edgecore Cassini atau platform OTN sejenis, CFP2-DCO berperan sebagai optical line interface pada *line card slot*. Fungsi utamanya meliputi:
 
 1. **Konversi Sinyal Digital ke Optik**  
    Mengubah data listrik berkecepatan tinggi dari prosesor jaringan menjadi sinyal optik yang siap dikirim ke jaringan transport.
@@ -84,14 +84,13 @@ Dalam perangkat **Edgecore Cassini** atau platform OTN sejenis, CFP2-DCO berpera
 
 ### 4. Kompatibilitas Perangkat
 
-CFP2-DCO dapat digunakan pada slot **CFP2-compatible port** yang mendukung antarmuka **digital coherent**.  
-Dalam konteks perangkat Cassini, port ini biasanya ditemukan pada **line card slot (1–8)** yang disediakan khusus untuk modul 200G atau CFP2-DCO.
+CFP2-DCO dapat digunakan pada slot CFP2-compatible port yang mendukung antarmuka digital coherent.  
+Dalam konteks perangkat Cassini, port ini biasanya ditemukan pada line card slot (1–8) yang disediakan khusus untuk modul 200G atau CFP2-DCO.
 
-Modul ini **tidak dapat berfungsi** pada slot QSFP28 atau SFP+ biasa, karena perbedaan arsitektur sinyal (non-coherent vs coherent).  
+Modul ini tidak dapat berfungsi pada slot QSFP28 atau SFP+ biasa, karena perbedaan arsitektur sinyal (non-coherent vs coherent).  
 Selain itu, perangkat host harus memiliki sistem operasi jaringan (NOS) yang mendukung kontrol DCO, seperti:
 - **OcNOS RON (Research Optical Network build)**, atau  
 - **SONiC dengan Coherent Optics Extension**.
-
 
 ---
 
@@ -100,11 +99,11 @@ Selain itu, perangkat host harus memiliki sistem operasi jaringan (NOS) yang men
 <img src="{{ '/assets/gitbook/images/alt/ftlc9558repm.webp' | relative_url }}" alt="Modul FTLC9558REPM" width="50%">
 <br>
 
-QSFP28 merupakan jenis modul **transceiver hot-pluggable** yang dirancang untuk koneksi data berkecepatan tinggi hingga **100 Gigabit Ethernet** di pusat data dan jaringan telekomunikasi. QSPF28 memiliki singkatan dari "Q" yaitu Quad yang berarti memiliki 4 saluran dan "SFP" merujuk pada Small Form-factor Pluggable yang merupakan modul kecil ringkas yang digunakan untuk menghubungkan perangkat jaringan seperti switch dan router ke kabel serat optik atau tembaga.
+QSFP28 merupakan jenis modul transceiver hot-pluggable yang dirancang untuk koneksi data berkecepatan tinggi hingga 100 Gigabit Ethernet di pusat data dan jaringan telekomunikasi. QSPF28 memiliki singkatan dari "Q" yaitu Quad yang berarti memiliki 4 saluran dan "SFP" merujuk pada Small Form-factor Pluggable yang merupakan modul kecil ringkas yang digunakan untuk menghubungkan perangkat jaringan seperti switch dan router ke kabel serat optik atau tembaga.
 
 ### 1. Prinsip Kerja
 
-Modul Finisar **FTCL9558REPM** (QSFP28 100GBASE-SR4) berkerja berdasarkan konsep **parallel optical trensmission** menggunakan teknologi Multi-Mode Fiber (MMF) dan laser VCSEL (Vertical Cavity Surface-Emittin Laser).
+Modul Finisar FTCL9558REPM (QSFP28 100GBASE-SR4) berkerja berdasarkan konsep parallel optical trensmission menggunakan teknologi Multi-Mode Fiber (MMF) dan laser VCSEL (Vertical Cavity Surface-Emittin Laser).
 
 Secara garis besar, proses transmisinya dapat dijelaskan sebagai berikut:
 
@@ -143,7 +142,7 @@ Secara garis besar, proses transmisinya dapat dijelaskan sebagai berikut:
 
 ### 3. Fungsi dan Manfaat dalam Arsitektur Cassini
 
-Dalam sistem **Edgecore Cassini**, modul QSFP26 seperti FTLC9558REPM digunakan untuk lapisan Ethernet switching dan data aggregation, tidak seperti CFP2-DCO yang digunakan untuk transport optik jarak jauh.
+Dalam sistem Edgecore Cassini, modul QSFP26 seperti FTLC9558REPM digunakan untuk lapisan Ethernet switching dan data aggregation, tidak seperti CFP2-DCO yang digunakan untuk transport optik jarak jauh.
 
 Peran dan manfaatnya dapat dijelaskan sebagai berikut:
 
@@ -174,13 +173,13 @@ Peran dan manfaatnya dapat dijelaskan sebagai berikut:
 <img src="{{ '/assets/gitbook/images/alt/ysp96-8503m.webp' | relative_url }}" alt="Modul YSP96-8503M" width="30%">
 <br>
 
-**Youthton YSP96-8503M** adalah **transceiver optik SFP+ (Small Form-Factor Pluggable Plus)** yang dirancang untuk aplikasi **10-Gigabit Ethernet (10GBASE-SR/SW)**.  
+Youthton YSP96-8503M adalah transceiver optik SFP+ (Small Form-Factor Pluggable Plus yang dirancang untuk aplikasi 10-Gigabit Ethernet (10GBASE-SR/SW).  
 
 SFP+ merupakan singkatan dari Small Form-factor Pluggable Plus, yang merupakan versi pengembangan dari modul SFP (1G). Modul ini banyak digunakan pada perangkat jaringan seperti switch, router, server, maupun perangkat penyimpanan jaringan (NAS dan SAN) untuk menyediakan konektivitas optik atau tembaga berkecepatan tinggi.
 
-Perangkat ini menggunakan **VCSEL laser 850 nm** dan **PIN photodiode receiver**, dengan kemampuan transmisi hingga **300 meter** pada **serat multimode (OM3)**.  
+Perangkat ini menggunakan VCSEL laser 850 nm dan PIN photodiode receiver, dengan kemampuan transmisi hingga 300 meter pada serat multimode (OM3).
 
-Transceiver ini bersifat **hot-pluggable**, **compliant dengan SFP+ MSA dan IEEE 802.3ae**, serta mendukung **DDM (Digital Diagnostic Monitoring)** sesuai standar **SFF-8472**.
+Transceiver ini bersifat hot-pluggable, compliant dengan SFP+ MSA dan IEEE 802.3ae, serta mendukung DDM (Digital Diagnostic Monitoring) sesuai standar SFF-8472.
 
 | Parameter | Nilai / Deskripsi |
 | --- | --- |
@@ -200,18 +199,18 @@ Transceiver ini bersifat **hot-pluggable**, **compliant dengan SFP+ MSA dan IEEE
 
 ## Prinsip Kerja
 
-Modul **SFP+** berfungsi mengubah **sinyal listrik (electrical)** menjadi **sinyal optik (optical)** dan sebaliknya.  
+Modul SFP+ berfungsi mengubah sinyal listrik (electrical) menjadi sinyal optik (optical) dan sebaliknya.  
 YSP96-8503M terdiri dari dua bagian utama:
 
 1. **Transmitter Section (TX)**  
-   - Menggunakan **850 nm VCSEL Laser** untuk mengubah data elektrik dari host menjadi sinyal cahaya.  
-   - Cahaya ini dikirim melalui serat multimode menggunakan konektor **LC duplex**.
+   - Menggunakan 850 nm VCSEL Laser untuk mengubah data elektrik dari host menjadi sinyal cahaya.  
+   - Cahaya ini dikirim melalui serat multimode menggunakan konektor LC duplex.
 
 2. **Receiver Section (RX)**  
-   - Menggunakan **PIN photo-detector** untuk mendeteksi cahaya yang diterima.  
+   - Menggunakan PIN photo-detector untuk mendeteksi cahaya yang diterima.  
    - Sinyal optik diubah kembali menjadi sinyal elektrik untuk diteruskan ke host device.
 
-> Jalur komunikasi 10 Gbps ini berjalan **dupleks penuh (full-duplex)**, dengan TX dan RX bekerja secara bersamaan di dua inti serat optik.
+> Jalur komunikasi 10 Gbps ini berjalan dupleks penuh (full-duplex), dengan TX dan RX bekerja secara bersamaan di dua inti serat optik.
 
 ## Spesifikasi Listrik dan Optik (Rangkuman)
 
@@ -229,8 +228,8 @@ YSP96-8503M terdiri dari dua bagian utama:
 
 ## Fungsi dan Manfaat dalam Arsitektur Cassini
 
-Dalam sistem **Edgecore Cassini (AS7716-24SC)** — platform open optical switch 3.2 Tbps —  
-Youthton YSP96-8503M digunakan sebagai **optical interface 10 GbE** di port **QSFP28 breakout (4×10G)** atau **SFP+ slot pada line-card**.
+Dalam sistem Edgecore Cassini (AS7716-24SC) — platform open optical switch 3.2 Tbps —  
+Youthton YSP96-8503M digunakan sebagai optical interface 10 GbE di port QSFP28 breakout (4×10G) atau SFP+ slot pada line-card.
 
 ### Fungsi dalam arsitektur Cassini:
 1. **Transceiver Access Layer**  
@@ -268,6 +267,8 @@ Link penjualan produk ada pada [link berikut](https://www.tokopedia.com/mobitra/
 <br>
 
 Kabel MPO12 adalah jenis kabel serat optik dengan kapasitas tinggi yang memiliki 12 serat optik dalam satu konektor tunggal dan digunakan untuk koneksi data berkecepatan tinggi. Fungsi MPO12 untuk menghemat ruang dan menyederhanakan pemasangan dalam pusat data dengan kepadatan tinggi (high-density) melalui konektor tunggal yang terintegrasi.
+
+OM3 merupakan *Optical Multimode* yang identik dengan selubung luar dengan warna aqua. OM3 merupakan serat multimode dengan diameter 50 μm yang dioptimalkan untuk laser dengan panjang gelombang 850 nm yang mampu mengantarkan jaringan Ethernet 10Gb/s dengan VCSEL 850 nm dan memiliki jarak transmisi hingga 300 m.
 
 Kabel MPO12 sangan cocok untuk aplikasi seperti 40G dan 100G, serta dapat dipecah menjadi jaringan yang lebih kecil lagi seperti 4 x 10G atau 3 x 10G menggunakan kabel *breakout*
 

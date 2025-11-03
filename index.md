@@ -1,76 +1,59 @@
 ---
-title: Integrasi OcNOS dengan Ubuntu pada Oracle Virtual Machine untuk Manajemen dan Remote Access Jaringan
+title: Dokumentasi Implementasi Jaringan Berbasis Open Network
 layout: home
 permalink: /
 ---
 
-# Dokumentasi Integrasi OcNOS
-
-Selamat datang di dokumentasi resmi mengenai **Integrasi OcNOS**.  
-Dokumentasi ini disusun dengan tujuan untuk memberikan panduan yang terstruktur, jelas, dan mudah diikuti oleh siapa saja yang ingin memahami serta mengimplementasikan OcNOS dalam lingkungan praktik maupun proyek nyata.
-
----
+Selamat datang di dokumentasi resmi mengenai implementasi jaringan menggunakan perangkat berupa Cassini dan DCSG (Disaggregated Cell Site Gateway).  
+Dokumentasi ini disusun untuk memberikan panduan lengkap dalam memahami, mengonfigurasi, serta mengintegrasikan sistem jaringan berbasis OcNOS dan SONiC baik secara virtual maupun menggunakan perangkat nyata.
 
 ## Pengantar
 
-Perkembangan teknologi jaringan semakin pesat dan menuntut adanya pemahaman yang mendalam mengenai perangkat lunak maupun perangkat keras yang digunakan. Salah satu sistem operasi jaringan yang banyak digunakan adalah **OcNOS (Open Compute Network Operating System)**. OcNOS merupakan sistem operasi jaringan berbasis Linux yang dirancang untuk mendukung berbagai skenario jaringan modern, mulai dari skala laboratorium hingga implementasi di lingkungan produksi.
+Seiring berkembangnya teknologi jaringan terbuka, pemahaman terhadap sistem operasi jaringan dan perangkat keras yang mendukungnya menjadi sangat penting.  
+**OcNOS** hadir sebagai solusi open network berbasis Linux yang fleksibel, modular, dan cocok digunakan untuk berbagai kebutuhan, mulai dari eksperimen laboratorium hingga implementasi di lingkungan produksi.
 
-Dokumentasi ini hadir untuk membantu pembaca memahami:
-1. Apa itu OcNOS dan perannya dalam sistem jaringan.
-2. Bagaimana cara melakukan instalasi, konfigurasi, hingga integrasi dengan sistem lain.
-3. Langkah-langkah praktis yang dapat diikuti secara runtut, sehingga pembaca dapat memperoleh pengalaman langsung dalam menggunakan OcNOS.
-
----
+Dokumentasi ini tidak hanya mencakup panduan software seperti instalasi dan konfigurasi OcNOS di dalam VirtualBox dan Ubuntu, tetapi juga pembahasan mendalam mengenai **hardware**, meliputi:
+- Pengenalan perangkat jaringan fisik seperti Cassini dan DCSG.  
+- Langkah konfigurasi perangkat keras dan koneksi antar sistem.  
+- Integrasi antara hardware dan software untuk membangun sistem jaringan yang terukur dan efisien.
 
 ## Ruang Lingkup Dokumentasi
 
-Isi dokumentasi ini terbagi menjadi beberapa bagian utama yang disusun secara berurutan untuk mempermudah pemahaman:
+Website dokumentasi ini terbagi menjadi beberapa bagian utama:
 
-- **Pendahuluan**  
-  Memberikan gambaran umum mengenai dasar-dasar OcNOS, manfaatnya, serta alasan mengapa sistem operasi ini penting untuk dipelajari.
+- **Software**  
+  Menjelaskan proses instalasi Virtual Machine, OcNOS, dan Ubuntu beserta langkah konfigurasi jaringan dan akses jarak jauh.
 
-- **Instalasi**  
-  Menjelaskan tahapan instalasi yang diperlukan, mulai dari persiapan lingkungan, kebutuhan sistem, hingga proses instalasi OcNOS itu sendiri.
+- **Hardware**  
+  Berisi pembahasan perangkat keras yang digunakan, seperti Cassini, DCSG, dan modul jaringan, termasuk arsitektur, fungsi, serta langkah konfigurasi dasarnya.
 
-- **Langkah-Langkah Implementasi**  
-  Menyediakan panduan teknis secara detail mengenai konfigurasi dan integrasi OcNOS. Pada bagian ini, pembaca akan menemukan instruksi step-by-step yang dapat langsung diterapkan.
+- **Integrasi dan Pengujian**  
+  Menjelaskan cara menghubungkan sistem virtual dengan perangkat fisik untuk memastikan komunikasi antar komponen berjalan optimal.
 
-- **Studi Kasus dan Catatan**  
-  Membahas contoh penerapan OcNOS dalam skenario nyata sekaligus memberikan catatan penting terkait kesalahan umum, tips, serta rekomendasi untuk menghindari kendala teknis.
+- **Referensi dan Catatan Tambahan**  
+  Menyediakan kumpulan catatan teknis, hasil pengujian, serta tips dalam penyelesaian masalah umum saat konfigurasi.
 
----
+## Tujuan Dokumentasi
 
-## Tujuan Penyusunan
+Penyusunan dokumentasi ini bertujuan untuk:
 
-Dokumentasi ini tidak hanya berfungsi sebagai panduan teknis, tetapi juga sebagai sumber referensi yang dapat digunakan dalam pembelajaran maupun pengembangan. Tujuan utama penyusunan dokumentasi ini adalah:
-
-- Membantu pengguna baru memahami konsep dasar OcNOS dengan cara yang lebih sistematis.  
-- Menyediakan pedoman praktis bagi praktisi maupun mahasiswa yang sedang melakukan penelitian atau praktik jaringan.  
-- Mempermudah integrasi OcNOS dengan sistem atau perangkat lain melalui panduan yang aplikatif.  
-- Menjadi catatan referensi jangka panjang yang dapat terus diperbarui sesuai dengan perkembangan teknologi.
-
----
+- Menjadi panduan sistematis dalam memahami arsitektur dan konfigurasi OcNOS serta perangkat pendukungnya.  
+- Memberikan referensi pembelajaran yang dapat digunakan baik oleh mahasiswa, teknisi, maupun peneliti jaringan.  
+- Menyediakan dokumentasi teknis yang mudah diperbarui dan dijadikan acuan dalam pengembangan proyek lanjutan.  
+- Mendorong pemanfaatan sistem jaringan terbuka (open networking) dalam skala yang lebih luas.
 
 ## Cara Menggunakan Dokumentasi Ini
 
-Agar pembaca dapat memperoleh pemahaman secara menyeluruh, disarankan untuk mengikuti urutan pembahasan yang sudah disusun. Berikut alur penggunaan dokumentasi ini:
+Agar pembaca dapat mengikuti alur dengan baik, disarankan untuk memulai dari bagian atas ke bawah:
 
-1. **Mulai dari Pendahuluan**  
-   Bagian ini penting untuk memberikan pemahaman dasar sebelum melangkah lebih jauh.
+1. **Mulai dari Software** - Pelajari dasar instalasi dan konfigurasi sistem virtual.  
+2. **Lanjut ke Hardware** - Pahami struktur dan fungsi perangkat keras yang digunakan.  
+3. **Integrasikan Keduanya** Ikuti langkah-langkah untuk menghubungkan OcNOS dengan perangkat fisik.  
+4. **Lihat Catatan & Studi Kasus** - Gunakan bagian ini untuk memahami permasalahan umum dan solusinya.
 
-2. **Lanjutkan ke Instalasi**  
-   Ikuti instruksi instalasi dengan teliti untuk memastikan lingkungan sudah siap digunakan.
+## Penutup
 
-3. **Pahami Langkah-Langkah Implementasi**  
-   Ikuti petunjuk konfigurasi secara runtut, dari tahap dasar hingga tahap integrasi.
+Dokumentasi ini diharapkan dapat menjadi sarana pembelajaran sekaligus panduan praktis dalam memahami integrasi sistem jaringan modern berbasis OcNOS.  
+Baik untuk riset akademik maupun implementasi teknis, dokumentasi ini dirancang agar mudah dipahami, diperbarui, dan dikembangkan secara kolaboratif.
 
-4. **Pelajari Studi Kasus dan Catatan**  
-   Gunakan bagian ini sebagai bahan refleksi, sekaligus mempelajari kesalahan umum yang sering terjadi serta cara mengatasinya.
-
----
-
-## Harapan
-
-Melalui dokumentasi ini, diharapkan para pembaca dapat memperoleh pemahaman yang komprehensif mengenai OcNOS, tidak hanya dari sisi teori tetapi juga dari sisi praktik. Dengan penyajian yang terstruktur, dokumentasi ini dapat menjadi pendamping yang andal dalam proses pembelajaran maupun penerapan langsung di lapangan.
-
-Apabila Anda sudah siap untuk memulai, silakan lanjutkan ke bagian berikutnya, yaitu **Pendahuluan**.
+✦ Dibangun menggunakan [Jekyll](https://jekyllrb.com/) dan [GitBook Jekyll Theme](https://github.com/sighingnow/jekyll-gitbook).
