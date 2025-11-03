@@ -8,8 +8,6 @@ Fokus utama dokumentasi ini meliputi dua aspek penting:
 
 Dengan adanya dokumentasi ini, diharapkan pengguna dan pengembang dapat memahami hubungan antara komponen virtual dan fisik dalam satu ekosistem jaringan yang terintegrasi.
 
----
-
 ## Teknologi yang Digunakan  
 
 Beberapa komponen utama yang digunakan dalam pengembangan website ini:  
@@ -19,8 +17,6 @@ Beberapa komponen utama yang digunakan dalam pengembangan website ini:
 - **Markdown & HTML** → Bahasa utama untuk menyusun konten dokumentasi agar mudah dibaca dan dikelola.  
 - **CSS & Font Awesome** → Digunakan untuk memperindah tampilan serta menambahkan ikon seperti GitHub, Twitter, dan lainnya.  
 - **JavaScript** → Mengatur fitur interaktif seperti *search bar*, *dark/light mode*, dan navigasi dinamis.  
-
----
 
 ## Struktur Repositori  
 
@@ -32,8 +28,6 @@ Struktur direktori dalam proyek ini disusun agar memisahkan dokumentasi perangka
 - `/_layouts` → Template dasar untuk setiap jenis halaman.  
 - `index.md` → Halaman utama (home) dari website.  
 
----
-
 ## Koleksi Jekyll (Collections)  
 
 Website ini memanfaatkan fitur *collections* dari Jekyll untuk mengelompokkan konten:  
@@ -44,8 +38,6 @@ Website ini memanfaatkan fitur *collections* dari Jekyll untuk mengelompokkan ko
 
 Koleksi ini diatur agar tampil terstruktur di sidebar, memudahkan navigasi dan pembacaan.
 
----
-
 ## Lisensi  
 
 Proyek ini dikembangkan menggunakan:  
@@ -55,8 +47,6 @@ Proyek ini dikembangkan menggunakan:
 
 Lisensi MIT memperbolehkan penggunaan, modifikasi, dan distribusi ulang selama tetap mencantumkan atribusi kepada pembuat aslinya.
 
----
-
 ## Tujuan Dokumentasi  
 
 Website ini dibuat untuk:  
@@ -65,7 +55,5 @@ Website ini dibuat untuk:
 - Menyediakan panduan teknis lengkap mulai dari konfigurasi hingga pengujian sistem.  
 - Menjadi referensi pembelajaran bagi mahasiswa, teknisi, dan peneliti yang bekerja dengan sistem jaringan terbuka.  
 - Menyediakan arsip digital terstruktur agar setiap langkah mudah dilacak dan diperbarui.  
-
----
 
 ✦ Dibangun dengan ❤️ menggunakan [Jekyll](https://jekyllrb.com/) dan [GitBook Jekyll Theme](https://github.com/sighingnow/jekyll-gitbook).  
