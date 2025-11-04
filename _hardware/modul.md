@@ -173,7 +173,7 @@ Peran dan manfaatnya dapat dijelaskan sebagai berikut:
 <img src="{{ '/assets/gitbook/images/alt/ysp96-8503m.webp' | relative_url }}" alt="Modul YSP96-8503M" width="30%">
 <br>
 
-Youthton YSP96-8503M adalah transceiver optik SFP+ (Small Form-Factor Pluggable Plus yang dirancang untuk aplikasi 10-Gigabit Ethernet (10GBASE-SR/SW).  
+Youthton YSP96-8503M adalah transceiver optik SFP+ (Small Form-Factor) Pluggable Plus yang dirancang untuk aplikasi 10-Gigabit Ethernet (10GBASE-SR/SW).  
 
 SFP+ merupakan singkatan dari Small Form-factor Pluggable Plus, yang merupakan versi pengembangan dari modul SFP (1G). Modul ini banyak digunakan pada perangkat jaringan seperti switch, router, server, maupun perangkat penyimpanan jaringan (NAS dan SAN) untuk menyediakan konektivitas optik atau tembaga berkecepatan tinggi.
 
