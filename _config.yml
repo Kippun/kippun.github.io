@@ -53,6 +53,10 @@ collections:
     output: true
     sort_by: order
     permalink: /:collection/:path/
+  summary:
+    output: true
+    sort_by: order
+    permalink: /:collection/:path/
   other:
     output: true
     sort_by: order
@@ -61,6 +65,7 @@ collections:
 ordered_collections:
   - software
   - hardware
+  - summary
   - other
 
 page_width: 800px
