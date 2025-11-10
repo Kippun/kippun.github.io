@@ -45,6 +45,10 @@ exclude:
   - _drafts
 
 collections:
+  fundamentals:
+    output: true
+    sort_by: order
+    permalink: /:collection/:path/
   software:
     output: true
     sort_by: order
@@ -63,6 +67,7 @@ collections:
     permalink: /:collection/:path/
 
 ordered_collections:
+  - fundamentals
   - software
   - hardware
   - summary

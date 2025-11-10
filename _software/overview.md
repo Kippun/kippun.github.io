@@ -1,5 +1,5 @@
 ---
-title: Software
+title: Virtual Setup
 author: Muhammad Rizki Akbar & A. Kiflan Jiyaad Mafazi. A
 date: 2025-09-21
 category: Jekyll
