@@ -99,41 +99,6 @@ Berikut adalah keterbatasan yang teridentifikasi selama pengujian menggunakan fi
 Cassini dengan build **OcNOS 1.1.0.2 - OTN_IPBASE** masih berfungsi untuk operasi jaringan dasar (Layer 2/3), namun belum dapat digunakan untuk fungsi utama sebagai **optical transport system**.  
 Untuk mengaktifkan fitur CFP2-DCO dan coherent optics, **diperlukan upgrade software ke build RON atau ADVANCED**, melalui **reinstall via ONIE** dan **aktivasi lisensi optical** dari vendor.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 # Dissagregated Cell Site Gateway - (DCSG AGCV208S)
