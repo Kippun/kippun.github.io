@@ -839,3 +839,61 @@ img {
     flex: 1 1 100%;
     max-width: 100%;
 }
+
+/* Modal Background */
+.img-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 70px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Modal Image */
+.img-modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 900px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Caption */
+#imgCaption {
+  margin: 10px auto;
+  text-align: center;
+  color: #ccc;
+  font-size: 16px;
+}
+
+/* Close Button */
+.img-close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.img-close:hover {
+  color: #bbb;
+}
+
+/* Zoom Animation */
+.img-modal-content {
+  animation: zoom 0.3s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}

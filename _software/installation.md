@@ -14,11 +14,11 @@ Instalasi Virtual Machine dilakukan untuk menyediakan hypervisor yang akan menja
 
 - Untuk melakukan instalasi Oracle Virtual Box, pertama buka file *installer*nya dan pilih menu next untuk melanjutkan.
 
-![image](/assets/gitbook/images/sbs_vm/01.png)
+![Instalasi Virtual Machine](/assets/gitbook/images/sbs_vm/01.png)
 
 - Pada bagian ini pilih “I accept the terms in the License Agreement” untuk menyetujui EULA dari Oracle Virtual Box.
 
-![image](/assets/gitbook/images/sbs_vm/02.png)
+![Instalasi Virtual Machine](/assets/gitbook/images/sbs_vm/02.png)
 
 - Siapkan bahan terlebih dahulu:
     
@@ -27,19 +27,19 @@ Instalasi Virtual Machine dilakukan untuk menyediakan hypervisor yang akan menja
 
 - Setelahnya akan diarahkan ke bagian dimana file dan folder akan di install.
 
-![image](/assets/gitbook/images/sbs_vm/03.png)
+![Instalasi Virtual Machine](/assets/gitbook/images/sbs_vm/03.png)
 
 - Setelah menyetujui file akan di install pada file path yang ditentukan, selanjutnya akan muncul peringatan mengenai gangguan jaringan yang akan terjadi pada saat pengunduhan paket. Untuk melanjutkan pilih menu “Yes”.
 
-![image](/assets/gitbook/images/sbs_vm/04.png)
+![Instalasi Virtual Machine](/assets/gitbook/images/sbs_vm/04.png)
 
 - Pada tahap selanjutnya akan muncul tampilan Custom Setup untuk mempermudah akses dan penggunaan VirtualBox. Untuk melanjutkan proses instalasi pilih menu “Next>”.
 
-![image](/assets/gitbook/images/sbs_vm/05.png)
+![Instalasi Virtual Machine](/assets/gitbook/images/sbs_vm/05.png)
 
 - Kemudian akan muncul tampilan untuk melakukan proses instalasi paket dari Oracle VirtualBox. untuk menyetujui pilih menu “Install”.
 
-![image](/assets/gitbook/images/sbs_vm/06.png)
+![Instalasi Virtual Machine](/assets/gitbook/images/sbs_vm/06.png)
 
 ---
 
@@ -47,7 +47,7 @@ Instalasi Virtual Machine dilakukan untuk menyediakan hypervisor yang akan menja
 
 - Setelah selesai melakukan instalasi Oracle VirtualBox, buka virtual box kemudian pilih pada bagian New untuk melakukan konfigurasi awal.
 
-![image](/assets/gitbook/images/sbs_ocnos/01.png)
+![Menu Bar Virtual Machine](/assets/gitbook/images/sbs_ocnos/01.png)
 
 - Setelah itu lanjutkan konfigurasi pemasangan
     - Nama : OcNOS-VM
@@ -55,31 +55,31 @@ Instalasi Virtual Machine dilakukan untuk menyediakan hypervisor yang akan menja
     - Subtype : Ubuntu
     - Version : Ubuntu (64-bit)
 
-![image](/assets/gitbook/images/sbs_ocnos/02.png)
+![Konfigurasi Name and Operating System](/assets/gitbook/images/sbs_ocnos/02.png)
 
 - Lakukan Konfigurasikan jumlah memori yang akan dialokasikan untuk mesin virtual. Dengan ukuran memori yang akan dijalankan.
 
-![image](/assets/gitbook/images/sbs_ocnos/03.png)
+![Konfigurasi Hardware](/assets/gitbook/images/sbs_ocnos/03.png)
 
 - Lakukan proses ekstrak file image VM OcNOS yang sebelumnya sudah diunduh.
 
-![image](/assets/gitbook/images/sbs_ocnos/04.png)
+![Ekstrak Image VM OcNOS](/assets/gitbook/images/sbs_ocnos/04.png)
 
 - Lalu pada “Hard Disk” lakukan konfigurasi seperti yang saya berikan dibawah ini.
 
-![image](/assets/gitbook/images/sbs_ocnos/05.png)
+![Konfigurasi Hard Disk](/assets/gitbook/images/sbs_ocnos/05.png)
 
-![image](/assets/gitbook/images/sbs_ocnos/06.png)
+![Menu Add pada Menu Bar VM](/assets/gitbook/images/sbs_ocnos/06.png)
 
-![image](/assets/gitbook/images/sbs_ocnos/07.png)
+![Pilih Image VM OcNOS](/assets/gitbook/images/sbs_ocnos/07.png)
 
-![image](/assets/gitbook/images/sbs_ocnos/08.png)
+![Gunakan Menu Use an Existing Virtual Hard Disk File](/assets/gitbook/images/sbs_ocnos/08.png)
 
 - Lalu lakukan konfigurasi untuk display klik kanan pada image> setting> dan pilih vboxVG
 
-![image](/assets/gitbook/images/sbs_ocnos/09.png)
+![Menu Pengaturan VM OcNOS](/assets/gitbook/images/sbs_ocnos/09.png)
 
-![image](/assets/gitbook/images/sbs_ocnos/10.png)
+![Konfigurasi Display VM OcNOS](/assets/gitbook/images/sbs_ocnos/10.png)
 
 - Langkah selanjutnya kita set up network untuk virtual box:
     - Attached to: Host-only Adapter
@@ -91,7 +91,7 @@ Instalasi Virtual Machine dilakukan untuk menyediakan hypervisor yang akan menja
     - Promiscuous Mode:  Allow All
     - Check Box pada Cable Connected pastikan tercentang
 
-![image](/assets/gitbook/images/sbs_ocnos/11.png)
+![Konfigurasi Adapter 1](/assets/gitbook/images/sbs_ocnos/11.png)
 
 - Langkah selanjutnya dilanjutkan dengan konfigurasi untuk adapter 2, 3, dan 4.
     - Attached to: Host-only Adapter
@@ -103,21 +103,21 @@ Instalasi Virtual Machine dilakukan untuk menyediakan hypervisor yang akan menja
     - Promiscuous Mode:  Allow All
     - Check Box pada Cable Connected pastikan tercentang
 
-![image](/assets/gitbook/images/sbs_ocnos/12.png)
+![Konfigurasi Adapter 2](/assets/gitbook/images/sbs_ocnos/12.png)
 
-- Lanjutkan untuk menambahkan data ports sesuai yang sudah saya buatkan
+- Lanjutkan untuk menambahkan data ports sesuai dengan yang ada pada gambar.
 
-![image](/assets/gitbook/images/sbs_ocnos/15.png)
+![Konfigurasi Data Port](/assets/gitbook/images/sbs_ocnos/15.png)
 
 - Lalu di lanjut dengan masuk ke dalam Images OcNOS nya masuk dengan
     - Username : ocnos
     - Password : ocnos
 
-![image](/assets/gitbook/images/sbs_ocnos/14.png)
+![Masuk ke dalam VM OcNOS](/assets/gitbook/images/sbs_ocnos/14.png)
 
 Jika sudah masuk ke dalam terminal dari OcNOS, maka proses pemasangan sudah berhasil
 
-![image](/assets/gitbook/images/sbs_ocnos/13.png)
+![Tampilan CLI OcNOS](/assets/gitbook/images/sbs_ocnos/13.png)
 
 ---
 
@@ -137,32 +137,32 @@ Selanjutnya pada toolbar di bagian atas layar Oracle Virtual Machine, pilih tool
     - Subtype: Ubuntu
     - Version: Ubuntu (64-bit)
 
-![image](/assets/gitbook/images/sbs_ubuntu/01.png)
+![Konfigurasi VM Ubuntu](/assets/gitbook/images/sbs_ubuntu/01.png)
 
 - Unattend Install
     - Username: (Menyesuaikan, disini menggunakan ubuntu22)
     - Password & Repeat Password: Gunakan katasandi sesuai kebutuan dan mudah diingat
 
-![image](/assets/gitbook/images/sbs_ubuntu/02.png)
+![Konfigurasi Unattended Install](/assets/gitbook/images/sbs_ubuntu/02.png)
 
 - Hardware
     - Base Memory: 1024 MB (1 GB Memory, lebih besar lebih baik)
     - Processor: 1 CPU (lebih besar lebih baik)
 
-![image](/assets/gitbook/images/sbs_ubuntu/03.png)
+![Konfigurasi HardWare](/assets/gitbook/images/sbs_ubuntu/03.png)
 
 - Hard Disk
     - Hard Disk File Location and Size: 20GB (untuk ukuran 20 GB sudah sangat bagus, lebih besar lebih baik namun tidak dianjurkan karena boros reosurce device dari host itu sendiri)
 
-![image](/assets/gitbook/images/sbs_ubuntu/04.png)
+![Konfigurasi Hard Disk](/assets/gitbook/images/sbs_ubuntu/04.png)
 
 Setelah melakukan konfigurasi pada Ubuntu, kemudian jalankan Ubuntu VM dan lakukan instalasi sumber daya.
 
-![image](/assets/gitbook/images/sbs_ubuntu/05.png)
+![Instalasi Package VM Ubuntu ](/assets/gitbook/images/sbs_ubuntu/05.png)
 
 Jika sudah mengunduh semua sumber daya, maka Ubuntu akan melakukan reboot dan akan memulai ulang boot seperti biasa Pada tahap ini tampilan CLI Ubuntu sudah muncul dan akan diminta untuk memasukkan username dan password yang sebelumnya sudah dibuat pada tahap konfigurasi **Unattend Install**.
 
-![image](/assets/gitbook/images/sbs_ubuntu/06.png)
+![Tampilan CLI VM Ubuntu](/assets/gitbook/images/sbs_ubuntu/06.png)
 
 Apabila login berhasil, tampilan yang muncul akan seperti pada gambar, ditandai dengan pesan "Welcome to Ubuntu" dan prompt **ubuntu22@ubuntu22:~$**. Hal ini menandakan bahwa proses instalasi dan login telah berhasil.
 

@@ -9,7 +9,7 @@ layout: post
 
 # Disaggregated Cell Single Gateway (DCSG AGCV208S)
 
-![image](/assets/gitbook/images/alt/dcsg_agcv208s.webp)
+![DCSG AGCV208S](/assets/gitbook/images/alt/dcsg_agcv208s.webp)
 <br>
 
 Delta Agema™ DCSG (*Disaggregated Cell Site Gateway*) merupakan keluarga perangkat **open networking switch/router** yang dirancang untuk kebutuhan **jaringan 5G, backhaul, dan edge computing**.  

@@ -12,7 +12,8 @@ layout: post
 
 Infrastruktur jaringan modern yang berbasis *open network* umumnya terdiri dari empat lapisan utama yaitu **access layer**, **backhaul layer**, **core layer**, dan **internet layer**.
 
-[image](/assets/gitbook/images/alt/infrastruktur.jpg)
+<img src="{{ '/assets/gitbook/images/alt/infrastruktur.jpg' | relative_url }}" alt="infrastruktur open network" width="100%">
+<br>
 
 ### 1. Access Layer
 

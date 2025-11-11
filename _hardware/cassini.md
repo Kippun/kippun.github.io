@@ -8,7 +8,7 @@ layout: post
 
 # Cassini — Edgecore AS7716-24SC
 
-![image](/assets/gitbook/images/alt/cassini_as7716-24sc.webp)
+![Cassini AS7716-24SC](/assets/gitbook/images/alt/cassini_as7716-24sc.webp)
 <br>
 
 **Cassini (AS7716-24SC)** adalah perangkat 100GbE *coherent switch / packet transponder* dengan *form factor* 1.5 RU yang dirancang untuk menggabungkan fungsi switching dan transport optik (DWDM/DCO). Perangkat ini cocok untuk inter-datacenter, metro dan long-haul network yang membutuhkan 100G/200G kapasitas tinggi serta fleksibilitas modul optik.

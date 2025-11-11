@@ -8,7 +8,7 @@ layout: post
 
 ## Oracle Virtual Box
 
-<img src="{{ '/assets/gitbook/images/OracleVM.webp' | relative_url }}" alt="Logo OcNOS" width="25%">
+<img src="{{ '/assets/gitbook/images/OracleVM.webp' | relative_url }}" alt="Logo OracleVM" width="25%">
 <br>
 
 VirtualBox adalah perangkat lunak hypervisor tipe-2 yang memungkinkan pengguna menjalankan satu atau lebih sistem operasi (guest) di atas sistem operasi utama (host). VirtualBox bersifat cross-platform (tersedia untuk Linux, Windows, macOS) dan banyak dipakai untuk membuat lab virtual, pengujian, dan pembelajaran.
@@ -85,7 +85,7 @@ Semua fungsionalitas dasar Layer 2, Layer 3, dan multicast tersedia. Dukungan MP
 
 ## Ubuntu
 
-<img src="{{ '/assets/gitbook/images/Ubuntu.webp' | relative_url }}" alt="Logo OcNOS" width="35%">
+<img src="{{ '/assets/gitbook/images/Ubuntu.webp' | relative_url }}" alt="Logo Ubuntu" width="35%">
 <br>
 
 Ubuntu adalah salah satu distribusi Linux yang paling populer dan dikembangkan oleh Canonical. Sistem operasi ini bersifat open-source, stabil, dan memiliki dukungan komunitas yang luas. Ubuntu tersedia dalam dua varian utama:
