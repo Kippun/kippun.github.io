@@ -22,7 +22,7 @@ Beberapa komponen utama yang digunakan dalam pengembangan website ini:
 
 Struktur direktori dalam proyek ini disusun agar memisahkan dokumentasi perangkat lunak, perangkat keras, dan informasi tambahan dengan jelas:  
 
-- `/_hardware` dan `/_software` → Berisi halaman dokumentasi utama.  
+- `/_fundamentals` `/_hardware` dan `/_software` → Berisi halaman dokumentasi utama.  
 - `/assets` → Menyimpan gambar, CSS, JavaScript, serta ikon.  
 - `/_includes` → File partial untuk komponen halaman (header, footer, sidebar, dll).  
 - `/_layouts` → Template dasar untuk setiap jenis halaman.  
