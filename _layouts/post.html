@@ -59,8 +59,6 @@
 
         {%- include footer.html -%}
 
-
-        <!-- Image Modal (Zoom) -->
         <div id="imgModal" class="img-modal">
             <span class="img-close">&times;</span>
             <img class="img-modal-content" id="imgPreview">
@@ -125,24 +123,20 @@
                 captionText.textContent = img.alt || "";
             }
 
-            // Delegated click handler: buka modal jika yang diklik <img> di dalam .book-body atau .page-inner
             document.addEventListener("click", function(event) {
                 const el = event.target;
                 if (el && el.tagName === "IMG" && (el.closest(".book-body") || el.closest(".page-inner"))) {
-                    // set cursor hint (opsional)
                     el.style.cursor = "zoom-in";
                     openModalForImage(el);
                 }
             });
 
-            // Tutup tombol
             if (closeBtn) {
                 closeBtn.addEventListener("click", function() {
                     modal.style.display = "none";
                 });
             }
 
-            // Tutup bila klik di luar gambar (pada backdrop)
             if (modal) {
                 modal.addEventListener("click", function(event) {
                     if (event.target === modal) {
@@ -151,14 +145,11 @@
                 });
             }
 
-            // Tutup dengan tombol Escape
             document.addEventListener("keydown", function(ev) {
                 if (ev.key === "Escape" && modal && modal.style.display === "block") {
                     modal.style.display = "none";
                 }
             });
-
-            // Tidak perlu re-inisialisasi pada page.change karena delegation menangani elemen baru.
         })();
         </script>
 
